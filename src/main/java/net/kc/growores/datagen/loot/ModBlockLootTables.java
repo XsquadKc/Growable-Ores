@@ -1,7 +1,6 @@
 package net.kc.growores.datagen.loot;
 
 import net.kc.growores.block.ModBlocks;
-import net.kc.growores.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -87,7 +86,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     }
 
-    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
+    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,
             this.applyExplosionDecay(pBlock,
                 LootItem.lootTableItem(item)

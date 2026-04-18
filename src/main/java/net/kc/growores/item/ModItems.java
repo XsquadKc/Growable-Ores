@@ -3,8 +3,6 @@ package net.kc.growores.item;
 import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
 import net.kc.growores.block.custom.OreReedBlock;
-import net.kc.growores.item.custom.FuelItem;
-import net.kc.growores.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Block;

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    },
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    },
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    },
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    },
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    },
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    },
+    {
+      "item": "growores:deepslate_diamond_reed_item"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}

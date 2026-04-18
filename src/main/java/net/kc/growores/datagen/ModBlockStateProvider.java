@@ -4,7 +4,6 @@ import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,67 +18,65 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.GROWING_BLOCK);
         //Add the following to the above *once* after adding new blocks, then move and replace generated block models
-        blockWithItem(ModBlocks.COAL_REED);
-        blockWithItem(ModBlocks.IRON_REED);
-        blockWithItem(ModBlocks.COPPER_REED);
-        blockWithItem(ModBlocks.GOLD_REED);
-        blockWithItem(ModBlocks.REDSTONE_REED);
-        blockWithItem(ModBlocks.LAPIS_REED);
-        blockWithItem(ModBlocks.DIAMOND_REED);
-        blockWithItem(ModBlocks.EMERALD_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_COAL_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_IRON_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_COPPER_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_GOLD_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_REDSTONE_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_LAPIS_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_DIAMOND_REED);
-        blockWithItem(ModBlocks.DEEPSLATE_EMERALD_REED);
-        blockWithItem(ModBlocks.NETHER_QUARTZ_REED);
-        blockWithItem(ModBlocks.NETHER_GOLD_REED);
-        blockWithItem(ModBlocks.OBSIDIAN_REED);
-        blockWithItem(ModBlocks.GLOWSTONE_REED);
-        blockWithItem(ModBlocks.CLAY_REED);
-        blockWithItem(ModBlocks.BLAZE_REED);
-        blockWithItem(ModBlocks.ENDER_REED);
-        blockWithItem(ModBlocks.AMETHYST_REED);
-        blockWithItem(ModBlocks.ANCIENT_DEBRIS_REED);
+        reedBlockWithItem(ModBlocks.COAL_REED);
+        reedBlockWithItem(ModBlocks.IRON_REED);
+        reedBlockWithItem(ModBlocks.COPPER_REED);
+        reedBlockWithItem(ModBlocks.GOLD_REED);
+        reedBlockWithItem(ModBlocks.REDSTONE_REED);
+        reedBlockWithItem(ModBlocks.LAPIS_REED);
+        reedBlockWithItem(ModBlocks.DIAMOND_REED);
+        reedBlockWithItem(ModBlocks.EMERALD_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_COAL_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_IRON_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_COPPER_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_GOLD_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_REDSTONE_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_LAPIS_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_DIAMOND_REED);
+        reedBlockWithItem(ModBlocks.DEEPSLATE_EMERALD_REED);
+        reedBlockWithItem(ModBlocks.NETHER_QUARTZ_REED);
+        reedBlockWithItem(ModBlocks.NETHER_GOLD_REED);
+        reedBlockWithItem(ModBlocks.OBSIDIAN_REED);
+        reedBlockWithItem(ModBlocks.GLOWSTONE_REED);
+        reedBlockWithItem(ModBlocks.CLAY_REED);
+        reedBlockWithItem(ModBlocks.BLAZE_REED);
+        reedBlockWithItem(ModBlocks.ENDER_REED);
+        reedBlockWithItem(ModBlocks.AMETHYST_REED);
+        reedBlockWithItem(ModBlocks.ANCIENT_DEBRIS_REED);
 
         //MODS
         //Applied Energistics 2
-        blockWithItem(ModBlocks.CERTUS_QUARTZ_REED);
+        reedBlockWithItem(ModBlocks.CERTUS_QUARTZ_REED);
 
         //Mystical Agriculture & Mystical Agradditions
-        blockWithoutItem(ModBlocks.SOULIUM_REED);
-        blockWithoutItem(ModBlocks.PROSPERITY_REED);
-        blockWithoutItem(ModBlocks.DEEPSLATE_PROSPERITY_REED);
-        blockWithoutItem(ModBlocks.NETHER_PROSPERITY_REED);
-        blockWithoutItem(ModBlocks.END_PROSPERITY_REED);
-        blockWithoutItem(ModBlocks.INFERIUM_REED);
-        blockWithoutItem(ModBlocks.DEEPSLATE_INFERIUM_REED);
-        blockWithoutItem(ModBlocks.NETHER_INFERIUM_REED);
-        blockWithoutItem(ModBlocks.END_INFERIUM_REED);
+        reedBlockWithoutItem(ModBlocks.SOULIUM_REED);
+        reedBlockWithoutItem(ModBlocks.PROSPERITY_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_PROSPERITY_REED);
+        reedBlockWithoutItem(ModBlocks.NETHER_PROSPERITY_REED);
+        reedBlockWithoutItem(ModBlocks.END_PROSPERITY_REED);
+        reedBlockWithoutItem(ModBlocks.INFERIUM_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_INFERIUM_REED);
+        reedBlockWithoutItem(ModBlocks.NETHER_INFERIUM_REED);
+        reedBlockWithoutItem(ModBlocks.END_INFERIUM_REED);
 
         //Extreme Reactors
-        blockWithoutItem(ModBlocks.ANGLESITE_REED);
-        blockWithoutItem(ModBlocks.BENITOITE_REED);
-        blockWithoutItem(ModBlocks.YELLORITE_REED);
+        reedBlockWithoutItem(ModBlocks.ANGLESITE_REED);
+        reedBlockWithoutItem(ModBlocks.BENITOITE_REED);
+        reedBlockWithoutItem(ModBlocks.YELLORITE_REED);
 
         //RFTools
-        blockWithoutItem(ModBlocks.DIMENSIONALSHARD_REED);
-        blockWithoutItem(ModBlocks.NETHER_DIMENSIONALSHARD_REED);
-        blockWithoutItem(ModBlocks.END_DIMENSIONALSHARD_REED);
+        reedBlockWithoutItem(ModBlocks.DIMENSIONALSHARD_REED);
+        reedBlockWithoutItem(ModBlocks.NETHER_DIMENSIONALSHARD_REED);
+        reedBlockWithoutItem(ModBlocks.END_DIMENSIONALSHARD_REED);
 
         //Powah! Rearchitected
-        blockWithoutItem(ModBlocks.URANINITE_REED);
-        blockWithoutItem(ModBlocks.DEEPSLATE_URANINITE_REED);
+        reedBlockWithoutItem(ModBlocks.URANINITE_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_URANINITE_REED);
 
         //Create
-        blockWithoutItem(ModBlocks.ZINC_REED);
-        blockWithoutItem(ModBlocks.DEEPSLATE_ZINC_REED);
+        reedBlockWithoutItem(ModBlocks.ZINC_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_ZINC_REED);
     }
-
-
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
@@ -88,5 +85,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void blockWithoutItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
+
+    private void reedBlockWithItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), models().cross(
+                blockRegistryObject.getId().getPath(),
+                blockTexture(blockRegistryObject.get())
+                ).renderType("cutout")
+                );
+    }
+
+    private void reedBlockWithoutItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(), models().cross(
+                blockRegistryObject.getId().getPath(),
+                blockTexture(blockRegistryObject.get())
+                ).renderType("cutout")
+                );
+
+    }
+
 
 }

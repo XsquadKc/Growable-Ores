@@ -96,7 +96,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     public void reedBlockAndItem(RegistryObject<Block> block, RegistryObject<Item> item){
-        reedBlock(block);
+        //reedBlock(block);
         simpleItem(item);
     }
 }
