@@ -1,27 +1,27 @@
-[18Apr2026 15:22:11.724] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\casey\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, growores, --all, --output, A:\Game Making\modding\Growable Ores 1.21\src\generated\resources, --existing, A:\Game Making\modding\Growable Ores 1.21\src\main\resources]
-[18Apr2026 15:22:11.727] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.10+7-LTS
-[18Apr2026 15:22:11.728] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.10 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[18Apr2026 15:22:11.820] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[18Apr2026 15:22:11.914] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/casey/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[18Apr2026 15:22:12.811] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[18Apr2026 15:22:13.515] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\casey\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, growores, --all, --output, A:\Game Making\modding\Growable Ores 1.21\src\generated\resources, --existing, A:\Game Making\modding\Growable Ores 1.21\src\main\resources]
-[18Apr2026 15:22:17.359] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
-[18Apr2026 15:22:17.359] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
-[18Apr2026 15:22:17.386] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[18Apr2026 15:22:17.871] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [growores]
-[18Apr2026 15:22:17.934] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/casey/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.11.17-1.21.1/forge-1.21-51.0.33_mapped_parchment_2024.11.17-1.21.1-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[18Apr2026 15:22:17.935] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/casey/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.11.17-1.21.1/forge-1.21-51.0.33_mapped_parchment_2024.11.17-1.21.1-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
-[18Apr2026 15:22:18.087] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[18Apr2026 15:22:18.213] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 123 ms
-[18Apr2026 15:22:18.213] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[18Apr2026 15:22:18.249] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 35 ms
-[18Apr2026 15:22:18.249] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: growores
-[18Apr2026 15:22:18.349] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: growores finished after 99 ms
-[18Apr2026 15:22:18.349] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: growores
-[18Apr2026 15:22:18.357] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: growores finished after 8 ms
-[18Apr2026 15:22:18.357] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id growores
-[18Apr2026 15:22:18.368] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id growores finished after 11 ms
-[18Apr2026 15:22:18.368] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id growores
-[18Apr2026 15:22:18.369] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id growores finished after 0 ms
-[18Apr2026 15:22:18.369] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 283 ms
-[18Apr2026 15:22:18.375] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 302, old count: 302, new count: 303, removed stale: 0, written: 1
+[18Apr2026 21:02:25.968] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\casey\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, growores, --all, --output, A:\Game Making\modding\Growable Ores\src\generated\resources, --existing, A:\Game Making\modding\Growable Ores\src\main\resources]
+[18Apr2026 21:02:25.970] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.10+7-LTS
+[18Apr2026 21:02:25.970] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.10 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[18Apr2026 21:02:26.051] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[18Apr2026 21:02:26.123] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/casey/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[18Apr2026 21:02:26.744] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[18Apr2026 21:02:27.320] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\casey\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, growores, --all, --output, A:\Game Making\modding\Growable Ores\src\generated\resources, --existing, A:\Game Making\modding\Growable Ores\src\main\resources]
+[18Apr2026 21:02:30.771] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.1.0, for MC 1.21.1 with MCP 20240808.132146
+[18Apr2026 21:02:30.771] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.1.0 Initialized
+[18Apr2026 21:02:30.795] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[18Apr2026 21:02:31.064] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [growores]
+[18Apr2026 21:02:31.130] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/casey/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1/forge-1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[18Apr2026 21:02:31.131] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/casey/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1/forge-1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[18Apr2026 21:02:31.278] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[18Apr2026 21:02:31.385] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 105 ms
+[18Apr2026 21:02:31.385] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[18Apr2026 21:02:31.421] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 36 ms
+[18Apr2026 21:02:31.422] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: growores
+[18Apr2026 21:02:31.525] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: growores finished after 103 ms
+[18Apr2026 21:02:31.525] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: growores
+[18Apr2026 21:02:31.534] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: growores finished after 9 ms
+[18Apr2026 21:02:31.534] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id growores
+[18Apr2026 21:02:31.550] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id growores finished after 15 ms
+[18Apr2026 21:02:31.551] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id growores
+[18Apr2026 21:02:31.551] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id growores finished after 0 ms
+[18Apr2026 21:02:31.551] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 272 ms
+[18Apr2026 21:02:31.560] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 318, old count: 318, new count: 319, removed stale: 0, written: 2
