@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:nether_gold_reed_item"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:gold_nugget"
+  }
+}

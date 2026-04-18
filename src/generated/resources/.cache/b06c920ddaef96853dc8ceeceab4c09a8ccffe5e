@@ -1,7 +1,7 @@
-// 1.20.1	2023-08-19T19:19:27.8730263	Tags for minecraft:block mod id growores
-781aead768dc71919e9e08ca8cd9ed7371decb69 data/growores/tags/blocks/growing_blocks.json
-dfcfae7db003d73262e43669d225aa7903bd1f24 data/minecraft/tags/blocks/mineable/pickaxe.json
-50612c4b8e45812cdab85a319ab4e02d44024b66 data/minecraft/tags/blocks/mineable/shovel.json
-76ffd36ea1f5e8d0de2cf15b7e5658ba4f442712 data/minecraft/tags/blocks/needs_diamond_tool.json
-3b1583fa8a247c275c024c467d1710be537ff007 data/minecraft/tags/blocks/needs_iron_tool.json
-2a85ff98e2e9312a1b209e5ae4db46489fb9996d data/minecraft/tags/blocks/needs_stone_tool.json
+// 1.21	2026-04-18T14:17:14.3445378	Tags for minecraft:block mod id growores
+781aead768dc71919e9e08ca8cd9ed7371decb69 data/growores/tags/block/growing_blocks.json
+dfcfae7db003d73262e43669d225aa7903bd1f24 data/minecraft/tags/block/mineable/pickaxe.json
+50612c4b8e45812cdab85a319ab4e02d44024b66 data/minecraft/tags/block/mineable/shovel.json
+76ffd36ea1f5e8d0de2cf15b7e5658ba4f442712 data/minecraft/tags/block/needs_diamond_tool.json
+3b1583fa8a247c275c024c467d1710be537ff007 data/minecraft/tags/block/needs_iron_tool.json
+2a85ff98e2e9312a1b209e5ae4db46489fb9996d data/minecraft/tags/block/needs_stone_tool.json

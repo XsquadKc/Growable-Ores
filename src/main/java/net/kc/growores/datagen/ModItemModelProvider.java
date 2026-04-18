@@ -21,7 +21,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
-
         reedBlockAndItem(ModBlocks.COAL_REED, ModItems.COAL_REED_ITEM);
         reedBlockAndItem(ModBlocks.IRON_REED, ModItems.IRON_REED_ITEM);
         reedBlockAndItem(ModBlocks.COPPER_REED, ModItems.COPPER_REED_ITEM);
@@ -85,18 +84,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
-            new ResourceLocation("item/generated")).texture("layer0",
-            new ResourceLocation(GrowOres.MOD_ID,"item/" + item.getId().getPath()));
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(GrowOres.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     public void reedBlock(RegistryObject<Block> block) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/cross"))
-                .texture("cross",  new ResourceLocation(GrowOres.MOD_ID, "block/" + block.getId().getPath()))
+        this.withExistingParent(block.getId().getPath(), mcLoc("block/cross"))
+                .texture("cross",  ResourceLocation.fromNamespaceAndPath(GrowOres.MOD_ID, "block/" + block.getId().getPath()))
                 .renderType("cutout");
     }
 
     public void reedBlockAndItem(RegistryObject<Block> block, RegistryObject<Item> item){
-        reedBlock(block);
+        //reedBlock(block);
         simpleItem(item);
     }
 }

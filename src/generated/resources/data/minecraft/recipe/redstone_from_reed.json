@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:redstone_reed_item"
+    },
+    {
+      "item": "growores:redstone_reed_item"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:redstone"
+  }
+}
