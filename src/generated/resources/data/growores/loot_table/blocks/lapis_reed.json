@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:lapis_reed_item"
+          "name": "growores:lapis_reed"
         }
       ],
       "rolls": 1.0

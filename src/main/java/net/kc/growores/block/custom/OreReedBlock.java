@@ -28,7 +28,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.common.IPlantable;
+import net.neoforged.neoforge.common.CommonHooks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -50,10 +50,10 @@ public class OreReedBlock extends SugarCaneBlock {
 
             if (i < maxHeight) {
                 int j = pState.getValue(AGE);
-                if (net.minecraftforge.common.ForgeHooks.onCropsGrowPre(pLevel, pPos, pState, true)) {
+                if (CommonHooks.canCropGrow(pLevel, pPos, pState, true)) {
                     if (j == 15) {
                         pLevel.setBlockAndUpdate(pPos.above(), this.defaultBlockState());
-                        net.minecraftforge.common.ForgeHooks.onCropsGrowPost(pLevel, pPos.above(), this.defaultBlockState());
+                        CommonHooks.fireCropGrowPost(pLevel, pPos.above(), this.defaultBlockState());
                         pLevel.setBlock(pPos, pState.setValue(AGE, Integer.valueOf(0)), 4);
                     } else {
                         pLevel.setBlock(pPos, pState.setValue(AGE, Integer.valueOf(j + 1)), 4);

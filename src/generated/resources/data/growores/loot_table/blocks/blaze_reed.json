@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:blaze_reed_item"
+          "name": "growores:blaze_reed"
         }
       ],
       "rolls": 1.0

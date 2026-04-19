@@ -1,7 +1,3 @@
 {
-  "parent": "minecraft:block/cross",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "cross": "growores:block/nether_gold_reed"
-  }
+  "parent": "growores:block/nether_gold_reed"
 }

@@ -2,11 +2,12 @@ package net.kc.growores.datagen;
 
 import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
+import net.kc.growores.block.custom.OreReedBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -79,15 +80,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+    private void blockWithItem(DeferredBlock<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void blockWithoutItem(RegistryObject<Block> blockRegistryObject) {
+    private void blockWithoutItem(DeferredBlock<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void reedBlockWithItem(RegistryObject<Block> blockRegistryObject) {
+    private void reedBlockWithItem(DeferredBlock<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), models().cross(
                 blockRegistryObject.getId().getPath(),
                 blockTexture(blockRegistryObject.get())
@@ -95,12 +96,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 );
     }
 
-    private void reedBlockWithoutItem(RegistryObject<Block> blockRegistryObject) {
+    private void reedBlockWithoutItem(DeferredBlock<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(), models().cross(
-                        blockRegistryObject.getId().getPath(),
-                        blockTexture(blockRegistryObject.get())
+                blockRegistryObject.getId().getPath(),
+                blockTexture(blockRegistryObject.get())
                 ).renderType("cutout")
-        );
+                );
     }
 
 }

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:deepslate_prosperity_reed_item"
+          "name": "growores:deepslate_prosperity_reed"
         }
       ],
       "rolls": 1.0

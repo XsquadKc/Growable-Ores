@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:soulium_reed_item"
+          "name": "growores:soulium_reed"
         }
       ],
       "rolls": 1.0
