@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "growores:block/certus_quartz_reed"
+  }
+}

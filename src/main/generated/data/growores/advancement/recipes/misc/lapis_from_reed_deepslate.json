@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_lapis_reed_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "growores:deepslate_lapis_reed_item"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "growores:lapis_from_reed_deepslate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_lapis_reed_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "growores:lapis_from_reed_deepslate"
+    ]
+  }
+}

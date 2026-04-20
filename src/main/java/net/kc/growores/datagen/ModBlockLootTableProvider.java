@@ -1,106 +1,103 @@
 package net.kc.growores.datagen;
 
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.kc.growores.block.ModBlocks;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
-import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.RegistryWrapper;
 
 import java.util.Set;
+import java.util.concurrent.CompletableFuture;
 
-public class ModBlockLootTableProvider extends BlockLootSubProvider {
-    public ModBlockLootTableProvider(HolderLookup.Provider pRegistries) {
-
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), pRegistries);
+public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
+    public ModBlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
-    protected void generate() {
-        this.dropSelf(ModBlocks.GROWING_BLOCK.get());
-        this.dropSelf(ModBlocks.COAL_REED.get());
-        this.dropSelf(ModBlocks.IRON_REED.get());
-        this.dropSelf(ModBlocks.COPPER_REED.get());
-        this.dropSelf(ModBlocks.GOLD_REED.get());
-        this.dropSelf(ModBlocks.REDSTONE_REED.get());
-        this.dropSelf(ModBlocks.LAPIS_REED.get());
-        this.dropSelf(ModBlocks.DIAMOND_REED.get());
-        this.dropSelf(ModBlocks.EMERALD_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_COAL_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_IRON_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_COPPER_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_GOLD_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_REDSTONE_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_LAPIS_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_DIAMOND_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_EMERALD_REED.get());
-        this.dropSelf(ModBlocks.NETHER_QUARTZ_REED.get());
-        this.dropSelf(ModBlocks.NETHER_GOLD_REED.get());
-        this.dropSelf(ModBlocks.OBSIDIAN_REED.get());
-        this.dropSelf(ModBlocks.GLOWSTONE_REED.get());
-        this.dropSelf(ModBlocks.CLAY_REED.get());
-        this.dropSelf(ModBlocks.BLAZE_REED.get());
-        this.dropSelf(ModBlocks.ENDER_REED.get());
-        this.dropSelf(ModBlocks.AMETHYST_REED.get());
-        this.dropSelf(ModBlocks.ANCIENT_DEBRIS_REED.get());
+    public void generate() {
+        addDrop(ModBlocks.GROWING_BLOCK);
+        addDrop(ModBlocks.COAL_REED);
+        addDrop(ModBlocks.IRON_REED);
+        addDrop(ModBlocks.COPPER_REED);
+        addDrop(ModBlocks.GOLD_REED);
+        addDrop(ModBlocks.REDSTONE_REED);
+        addDrop(ModBlocks.LAPIS_REED);
+        addDrop(ModBlocks.DIAMOND_REED);
+        addDrop(ModBlocks.EMERALD_REED);
+        addDrop(ModBlocks.DEEPSLATE_COAL_REED);
+        addDrop(ModBlocks.DEEPSLATE_IRON_REED);
+        addDrop(ModBlocks.DEEPSLATE_COPPER_REED);
+        addDrop(ModBlocks.DEEPSLATE_GOLD_REED);
+        addDrop(ModBlocks.DEEPSLATE_REDSTONE_REED);
+        addDrop(ModBlocks.DEEPSLATE_LAPIS_REED);
+        addDrop(ModBlocks.DEEPSLATE_DIAMOND_REED);
+        addDrop(ModBlocks.DEEPSLATE_EMERALD_REED);
+        addDrop(ModBlocks.NETHER_QUARTZ_REED);
+        addDrop(ModBlocks.NETHER_GOLD_REED);
+        addDrop(ModBlocks.OBSIDIAN_REED);
+        addDrop(ModBlocks.GLOWSTONE_REED);
+        addDrop(ModBlocks.CLAY_REED);
+        addDrop(ModBlocks.BLAZE_REED);
+        addDrop(ModBlocks.ENDER_REED);
+        addDrop(ModBlocks.AMETHYST_REED);
+        addDrop(ModBlocks.ANCIENT_DEBRIS_REED);
 
         //MODS
         //Applied Energistics 2
-        this.dropSelf(ModBlocks.CERTUS_QUARTZ_REED.get());
+        addDrop(ModBlocks.CERTUS_QUARTZ_REED);
 
         //Mystical Agriculture & Mystical Agradditions
-        this.dropSelf(ModBlocks.SOULIUM_REED.get());
-        this.dropSelf(ModBlocks.PROSPERITY_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_PROSPERITY_REED.get());
-        this.dropSelf(ModBlocks.NETHER_PROSPERITY_REED.get());
-        this.dropSelf(ModBlocks.END_PROSPERITY_REED.get());
-        this.dropSelf(ModBlocks.INFERIUM_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_INFERIUM_REED.get());
-        this.dropSelf(ModBlocks.NETHER_INFERIUM_REED.get());
-        this.dropSelf(ModBlocks.END_INFERIUM_REED.get());
+        addDrop(ModBlocks.SOULIUM_REED);
+        addDrop(ModBlocks.PROSPERITY_REED);
+        addDrop(ModBlocks.DEEPSLATE_PROSPERITY_REED);
+        addDrop(ModBlocks.NETHER_PROSPERITY_REED);
+        addDrop(ModBlocks.END_PROSPERITY_REED);
+        addDrop(ModBlocks.INFERIUM_REED);
+        addDrop(ModBlocks.DEEPSLATE_INFERIUM_REED);
+        addDrop(ModBlocks.NETHER_INFERIUM_REED);
+        addDrop(ModBlocks.END_INFERIUM_REED);
 
         //Extreme Reactors
-        this.dropSelf(ModBlocks.ANGLESITE_REED.get());
-        this.dropSelf(ModBlocks.BENITOITE_REED.get());
-        this.dropSelf(ModBlocks.YELLORITE_REED.get());
+        addDrop(ModBlocks.ANGLESITE_REED);
+        addDrop(ModBlocks.BENITOITE_REED);
+        addDrop(ModBlocks.YELLORITE_REED);
 
         //RFTools
-        this.dropSelf(ModBlocks.DIMENSIONALSHARD_REED.get());
-        this.dropSelf(ModBlocks.NETHER_DIMENSIONALSHARD_REED.get());
-        this.dropSelf(ModBlocks.END_DIMENSIONALSHARD_REED.get());
+        addDrop(ModBlocks.DIMENSIONALSHARD_REED);
+        addDrop(ModBlocks.NETHER_DIMENSIONALSHARD_REED);
+        addDrop(ModBlocks.END_DIMENSIONALSHARD_REED);
 
         //Powah! Rearchitected
-        this.dropSelf(ModBlocks.URANINITE_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_URANINITE_REED.get());
+        addDrop(ModBlocks.URANINITE_REED);
+        addDrop(ModBlocks.DEEPSLATE_URANINITE_REED);
 
         //Create
-        this.dropSelf(ModBlocks.ZINC_REED.get());
-        this.dropSelf(ModBlocks.DEEPSLATE_ZINC_REED.get());
+        addDrop(ModBlocks.ZINC_REED);
+        addDrop(ModBlocks.DEEPSLATE_ZINC_REED);
 
 
 
     }
 
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return createSilkTouchDispatchTable(pBlock,
-            this.applyExplosionDecay(pBlock,
-                LootItem.lootTableItem(item)
-                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
-                    .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))));
+
+    public LootTable.Builder createMultipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
+        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)
+                ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
+                        .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
     }
 
-    @Override
-    protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
-    }
 }

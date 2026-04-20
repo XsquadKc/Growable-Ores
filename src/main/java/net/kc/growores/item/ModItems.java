@@ -3,127 +3,129 @@ package net.kc.growores.item;
 import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
 import net.kc.growores.block.custom.OreReedBlock;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GrowOres.MOD_ID);
 
-    public static final RegistryObject<Item> COAL_REED_ITEM = ITEMS.register("coal_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.COAL_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> IRON_REED_ITEM = ITEMS.register("iron_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.IRON_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> COPPER_REED_ITEM = ITEMS.register("copper_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.COPPER_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> GOLD_REED_ITEM = ITEMS.register("gold_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.GOLD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> REDSTONE_REED_ITEM = ITEMS.register("redstone_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.REDSTONE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> LAPIS_REED_ITEM = ITEMS.register("lapis_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.LAPIS_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DIAMOND_REED_ITEM = ITEMS.register("diamond_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DIAMOND_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> EMERALD_REED_ITEM = ITEMS.register("emerald_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.EMERALD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_COAL_REED_ITEM = ITEMS.register("deepslate_coal_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_COAL_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_IRON_REED_ITEM = ITEMS.register("deepslate_iron_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_IRON_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_COPPER_REED_ITEM = ITEMS.register("deepslate_copper_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_COPPER_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_GOLD_REED_ITEM = ITEMS.register("deepslate_gold_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_GOLD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_REDSTONE_REED_ITEM = ITEMS.register("deepslate_redstone_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_REDSTONE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_LAPIS_REED_ITEM = ITEMS.register("deepslate_lapis_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_LAPIS_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_DIAMOND_REED_ITEM = ITEMS.register("deepslate_diamond_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_DIAMOND_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_EMERALD_REED_ITEM = ITEMS.register("deepslate_emerald_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_EMERALD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> NETHER_QUARTZ_REED_ITEM = ITEMS.register("nether_quartz_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.NETHER_QUARTZ_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> NETHER_GOLD_REED_ITEM = ITEMS.register("nether_gold_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.NETHER_GOLD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> OBSIDIAN_REED_ITEM = ITEMS.register("obsidian_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.OBSIDIAN_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> GLOWSTONE_REED_ITEM = ITEMS.register("glowstone_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.GLOWSTONE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CLAY_REED_ITEM = ITEMS.register("clay_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.CLAY_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> BLAZE_REED_ITEM = ITEMS.register("blaze_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.BLAZE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> ENDER_REED_ITEM = ITEMS.register("ender_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.ENDER_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> AMETHYST_REED_ITEM = ITEMS.register("amethyst_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.AMETHYST_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> ANCIENT_DEBRIS_REED_ITEM = ITEMS.register("ancient_debris_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.ANCIENT_DEBRIS_REED.get(), new Item.Properties().fireResistant()));
+    public static final BlockItem COAL_REED_ITEM = registerBlockItem("coal_reed_item",
+            new BlockItem(ModBlocks.COAL_REED, new Item.Settings()));
+    public static final BlockItem IRON_REED_ITEM = registerBlockItem("iron_reed_item",
+            new BlockItem(ModBlocks.IRON_REED, new Item.Settings()));
+    public static final BlockItem COPPER_REED_ITEM = registerBlockItem("copper_reed_item",
+            new BlockItem(ModBlocks.COPPER_REED, new Item.Settings()));
+    public static final BlockItem GOLD_REED_ITEM = registerBlockItem("gold_reed_item",
+            new BlockItem(ModBlocks.GOLD_REED, new Item.Settings()));
+    public static final BlockItem REDSTONE_REED_ITEM = registerBlockItem("redstone_reed_item",
+            new BlockItem(ModBlocks.REDSTONE_REED, new Item.Settings()));
+    public static final BlockItem LAPIS_REED_ITEM = registerBlockItem("lapis_reed_item",
+            new BlockItem(ModBlocks.LAPIS_REED, new Item.Settings()));
+    public static final BlockItem DIAMOND_REED_ITEM = registerBlockItem("diamond_reed_item",
+            new BlockItem(ModBlocks.DIAMOND_REED, new Item.Settings()));
+    public static final BlockItem EMERALD_REED_ITEM = registerBlockItem("emerald_reed_item",
+            new BlockItem(ModBlocks.EMERALD_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_COAL_REED_ITEM = registerBlockItem("deepslate_coal_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_COAL_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_IRON_REED_ITEM = registerBlockItem("deepslate_iron_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_IRON_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_COPPER_REED_ITEM = registerBlockItem("deepslate_copper_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_COPPER_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_GOLD_REED_ITEM = registerBlockItem("deepslate_gold_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_GOLD_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_REDSTONE_REED_ITEM = registerBlockItem("deepslate_redstone_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_REDSTONE_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_LAPIS_REED_ITEM = registerBlockItem("deepslate_lapis_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_LAPIS_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_DIAMOND_REED_ITEM = registerBlockItem("deepslate_diamond_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_DIAMOND_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_EMERALD_REED_ITEM = registerBlockItem("deepslate_emerald_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_EMERALD_REED, new Item.Settings()));
+    public static final BlockItem NETHER_QUARTZ_REED_ITEM = registerBlockItem("nether_quartz_reed_item",
+            new BlockItem(ModBlocks.NETHER_QUARTZ_REED, new Item.Settings()));
+    public static final BlockItem NETHER_GOLD_REED_ITEM = registerBlockItem("nether_gold_reed_item",
+            new BlockItem(ModBlocks.NETHER_GOLD_REED, new Item.Settings()));
+    public static final BlockItem OBSIDIAN_REED_ITEM = registerBlockItem("obsidian_reed_item",
+            new BlockItem(ModBlocks.OBSIDIAN_REED, new Item.Settings()));
+    public static final BlockItem GLOWSTONE_REED_ITEM = registerBlockItem("glowstone_reed_item",
+            new BlockItem(ModBlocks.GLOWSTONE_REED, new Item.Settings()));
+    public static final BlockItem CLAY_REED_ITEM = registerBlockItem("clay_reed_item",
+            new BlockItem(ModBlocks.CLAY_REED, new Item.Settings()));
+    public static final BlockItem BLAZE_REED_ITEM = registerBlockItem("blaze_reed_item",
+            new BlockItem(ModBlocks.BLAZE_REED, new Item.Settings()));
+    public static final BlockItem ENDER_REED_ITEM = registerBlockItem("ender_reed_item",
+            new BlockItem(ModBlocks.ENDER_REED, new Item.Settings()));
+    public static final BlockItem AMETHYST_REED_ITEM = registerBlockItem("amethyst_reed_item",
+            new BlockItem(ModBlocks.AMETHYST_REED, new Item.Settings()));
+    public static final BlockItem ANCIENT_DEBRIS_REED_ITEM = registerBlockItem("ancient_debris_reed_item",
+            new BlockItem(ModBlocks.ANCIENT_DEBRIS_REED, new Item.Settings().fireproof()));
 
     //MODS
     //Applied Energistics 2
-    public static final RegistryObject<Item> CERTUS_QUARTZ_REED_ITEM = ITEMS.register("certus_quartz_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.CERTUS_QUARTZ_REED.get(), new Item.Properties()));
+    public static final BlockItem CERTUS_QUARTZ_REED_ITEM = registerBlockItem("certus_quartz_reed_item",
+            new BlockItem(ModBlocks.CERTUS_QUARTZ_REED, new Item.Settings()));
 
     //Mystical Agriculture & Mystical Agradditions
-    public static final RegistryObject<Item> SOULIUM_REED_ITEM = ITEMS.register("soulium_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.SOULIUM_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> PROSPERITY_REED_ITEM = ITEMS.register("prosperity_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.PROSPERITY_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_PROSPERITY_REED_ITEM = ITEMS.register("deepslate_prosperity_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_PROSPERITY_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> NETHER_PROSPERITY_REED_ITEM = ITEMS.register("nether_prosperity_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.NETHER_PROSPERITY_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> END_PROSPERITY_REED_ITEM = ITEMS.register("end_prosperity_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.END_PROSPERITY_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> INFERIUM_REED_ITEM = ITEMS.register("inferium_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.INFERIUM_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_INFERIUM_REED_ITEM = ITEMS.register("deepslate_inferium_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_INFERIUM_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> NETHER_INFERIUM_REED_ITEM = ITEMS.register("nether_inferium_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.NETHER_INFERIUM_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> END_INFERIUM_REED_ITEM = ITEMS.register("end_inferium_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.END_INFERIUM_REED.get(), new Item.Properties()));
+    public static final BlockItem SOULIUM_REED_ITEM = registerBlockItem("soulium_reed_item",
+            new BlockItem(ModBlocks.SOULIUM_REED, new Item.Settings()));
+    public static final BlockItem PROSPERITY_REED_ITEM = registerBlockItem("prosperity_reed_item",
+            new BlockItem(ModBlocks.PROSPERITY_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_PROSPERITY_REED_ITEM = registerBlockItem("deepslate_prosperity_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_PROSPERITY_REED, new Item.Settings()));
+    public static final BlockItem NETHER_PROSPERITY_REED_ITEM = registerBlockItem("nether_prosperity_reed_item",
+            new BlockItem(ModBlocks.NETHER_PROSPERITY_REED, new Item.Settings()));
+    public static final BlockItem END_PROSPERITY_REED_ITEM = registerBlockItem("end_prosperity_reed_item",
+            new BlockItem(ModBlocks.END_PROSPERITY_REED, new Item.Settings()));
+    public static final BlockItem INFERIUM_REED_ITEM = registerBlockItem("inferium_reed_item",
+            new BlockItem(ModBlocks.INFERIUM_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_INFERIUM_REED_ITEM = registerBlockItem("deepslate_inferium_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_INFERIUM_REED, new Item.Settings()));
+    public static final BlockItem NETHER_INFERIUM_REED_ITEM = registerBlockItem("nether_inferium_reed_item",
+            new BlockItem(ModBlocks.NETHER_INFERIUM_REED, new Item.Settings()));
+    public static final BlockItem END_INFERIUM_REED_ITEM = registerBlockItem("end_inferium_reed_item",
+            new BlockItem(ModBlocks.END_INFERIUM_REED, new Item.Settings()));
 
     //Extreme Reactors
-    public static final RegistryObject<Item> ANGLESITE_REED_ITEM = ITEMS.register("anglesite_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.ANGLESITE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> BENITOITE_REED_ITEM = ITEMS.register("benitoite_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.BENITOITE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> YELLORITE_REED_ITEM = ITEMS.register("yellorite_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.YELLORITE_REED.get(), new Item.Properties()));
+    public static final BlockItem ANGLESITE_REED_ITEM = registerBlockItem("anglesite_reed_item",
+            new BlockItem(ModBlocks.ANGLESITE_REED, new Item.Settings()));
+    public static final BlockItem BENITOITE_REED_ITEM = registerBlockItem("benitoite_reed_item",
+            new BlockItem(ModBlocks.BENITOITE_REED, new Item.Settings()));
+    public static final BlockItem YELLORITE_REED_ITEM = registerBlockItem("yellorite_reed_item",
+            new BlockItem(ModBlocks.YELLORITE_REED, new Item.Settings()));
 
     //RFTools
-    public static final RegistryObject<Item> DIMENSIONALSHARD_REED_ITEM = ITEMS.register("dimensionalshard_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DIMENSIONALSHARD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> NETHER_DIMENSIONALSHARD_REED_ITEM = ITEMS.register("nether_dimensionalshard_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.NETHER_DIMENSIONALSHARD_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> END_DIMENSIONALSHARD_REED_ITEM = ITEMS.register("end_dimensionalshard_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.END_DIMENSIONALSHARD_REED.get(), new Item.Properties()));
+    public static final BlockItem DIMENSIONALSHARD_REED_ITEM = registerBlockItem("dimensionalshard_reed_item",
+            new BlockItem(ModBlocks.DIMENSIONALSHARD_REED, new Item.Settings()));
+    public static final BlockItem NETHER_DIMENSIONALSHARD_REED_ITEM = registerBlockItem("nether_dimensionalshard_reed_item",
+            new BlockItem(ModBlocks.NETHER_DIMENSIONALSHARD_REED, new Item.Settings()));
+    public static final BlockItem END_DIMENSIONALSHARD_REED_ITEM = registerBlockItem("end_dimensionalshard_reed_item",
+            new BlockItem(ModBlocks.END_DIMENSIONALSHARD_REED, new Item.Settings()));
 
     //Powah! Rearchitected
-    public static final RegistryObject<Item> URANITITE_REED_ITEM = ITEMS.register("uraninite_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.URANINITE_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_URANITITE_REED_ITEM = ITEMS.register("deepslate_uraninite_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_URANINITE_REED.get(), new Item.Properties()));
+    public static final BlockItem URANITITE_REED_ITEM = registerBlockItem("uraninite_reed_item",
+            new BlockItem(ModBlocks.URANINITE_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_URANITITE_REED_ITEM = registerBlockItem("deepslate_uraninite_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_URANINITE_REED, new Item.Settings()));
 
     //Create
-    public static final RegistryObject<Item> ZINC_REED_ITEM = ITEMS.register("zinc_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.ZINC_REED.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEEPSLATE_ZINC_REED_ITEM = ITEMS.register("deepslate_zinc_reed_item",
-            () -> new ItemNameBlockItem(ModBlocks.DEEPSLATE_ZINC_REED.get(), new Item.Properties()));
+    public static final BlockItem ZINC_REED_ITEM = registerBlockItem("zinc_reed_item",
+            new BlockItem(ModBlocks.ZINC_REED, new Item.Settings()));
+    public static final BlockItem DEEPSLATE_ZINC_REED_ITEM = registerBlockItem("deepslate_zinc_reed_item",
+            new BlockItem(ModBlocks.DEEPSLATE_ZINC_REED, new Item.Settings()));
 
+    private static Item registerItem(String name, Item item){
+        return Registry.register(Registries.ITEM, Identifier.of(GrowOres.MOD_ID, name), item);
+    }
 
+    private static BlockItem registerBlockItem(String name, BlockItem item){
+        return Registry.register(Registries.ITEM, Identifier.of(GrowOres.MOD_ID, name), item);
+    }
 
-    public static void register(IEventBus eventBus){
-        ITEMS.register(eventBus);
+    public static void registerModItems(){
+        GrowOres.LOGGER.info("Registering Mod Items for " + GrowOres.MOD_ID);
     }
 
 

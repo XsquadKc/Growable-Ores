@@ -1,86 +1,86 @@
 package net.kc.growores.item;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+
 
 public class ModCreativeModeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GrowOres.MOD_ID);
-    public static final RegistryObject<CreativeModeTab> GROWORES_TAB = CREATIVE_MODE_TABS.register("growores_tab", () -> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(ModBlocks.GROWING_BLOCK.get()))
-                    .title(Component.translatable("creativetab.growores_tab"))
-                    .displayItems((pParameters, pOutput) -> {
-                pOutput.accept(ModBlocks.GROWING_BLOCK.get());
 
-                pOutput.accept(ModItems.COAL_REED_ITEM.get());
-                pOutput.accept(ModItems.IRON_REED_ITEM.get());
-                pOutput.accept(ModItems.COPPER_REED_ITEM.get());
-                pOutput.accept(ModItems.GOLD_REED_ITEM.get());
-                pOutput.accept(ModItems.REDSTONE_REED_ITEM.get());
-                pOutput.accept(ModItems.LAPIS_REED_ITEM.get());
-                pOutput.accept(ModItems.DIAMOND_REED_ITEM.get());
-                pOutput.accept(ModItems.EMERALD_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_COAL_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_IRON_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_COPPER_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_GOLD_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_REDSTONE_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_LAPIS_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_DIAMOND_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_EMERALD_REED_ITEM.get());
-                pOutput.accept(ModItems.NETHER_QUARTZ_REED_ITEM.get());
-                pOutput.accept(ModItems.NETHER_GOLD_REED_ITEM.get());
-                pOutput.accept(ModItems.OBSIDIAN_REED_ITEM.get());
-                pOutput.accept(ModItems.GLOWSTONE_REED_ITEM.get());
-                pOutput.accept(ModItems.CLAY_REED_ITEM.get());
-                pOutput.accept(ModItems.ENDER_REED_ITEM.get());
-                pOutput.accept(ModItems.BLAZE_REED_ITEM.get());
-                pOutput.accept(ModItems.AMETHYST_REED_ITEM.get());
-                pOutput.accept(ModItems.ANCIENT_DEBRIS_REED_ITEM.get());
+    public static final ItemGroup GROWORES_TAB = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(GrowOres.MOD_ID,"growores_tab"),
+            FabricItemGroup.builder().icon(()-> new ItemStack(ModBlocks.GROWING_BLOCK))
+                .displayName(Text.translatable("itemgroup.growores.growores_tab"))
+                .entries((displayContext, pOutput) -> {
+                pOutput.add(ModBlocks.GROWING_BLOCK);
+                pOutput.add(ModItems.COAL_REED_ITEM);
+                pOutput.add(ModItems.IRON_REED_ITEM);
+                pOutput.add(ModItems.COPPER_REED_ITEM);
+                pOutput.add(ModItems.GOLD_REED_ITEM);
+                pOutput.add(ModItems.REDSTONE_REED_ITEM);
+                pOutput.add(ModItems.LAPIS_REED_ITEM);
+                pOutput.add(ModItems.DIAMOND_REED_ITEM);
+                pOutput.add(ModItems.EMERALD_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_COAL_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_IRON_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_COPPER_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_GOLD_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_REDSTONE_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_LAPIS_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_DIAMOND_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_EMERALD_REED_ITEM);
+                pOutput.add(ModItems.NETHER_QUARTZ_REED_ITEM);
+                pOutput.add(ModItems.NETHER_GOLD_REED_ITEM);
+                pOutput.add(ModItems.OBSIDIAN_REED_ITEM);
+                pOutput.add(ModItems.GLOWSTONE_REED_ITEM);
+                pOutput.add(ModItems.CLAY_REED_ITEM);
+                pOutput.add(ModItems.ENDER_REED_ITEM);
+                pOutput.add(ModItems.BLAZE_REED_ITEM);
+                pOutput.add(ModItems.AMETHYST_REED_ITEM);
+                pOutput.add(ModItems.ANCIENT_DEBRIS_REED_ITEM);
 
                 //Mods
                 //Applied Energistics 2
-                pOutput.accept(ModItems.CERTUS_QUARTZ_REED_ITEM.get());
+                pOutput.add(ModItems.CERTUS_QUARTZ_REED_ITEM);
 
                 //Mystical Agriculture & Mystical Agradditions
-                pOutput.accept(ModItems.SOULIUM_REED_ITEM.get());
-                pOutput.accept(ModItems.PROSPERITY_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_PROSPERITY_REED_ITEM.get());
-                pOutput.accept(ModItems.NETHER_PROSPERITY_REED_ITEM.get());
-                pOutput.accept(ModItems.END_PROSPERITY_REED_ITEM.get());
-                pOutput.accept(ModItems.INFERIUM_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_INFERIUM_REED_ITEM.get());
-                pOutput.accept(ModItems.NETHER_INFERIUM_REED_ITEM.get());
-                pOutput.accept(ModItems.END_INFERIUM_REED_ITEM.get());
+                pOutput.add(ModItems.SOULIUM_REED_ITEM);
+                pOutput.add(ModItems.PROSPERITY_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_PROSPERITY_REED_ITEM);
+                pOutput.add(ModItems.NETHER_PROSPERITY_REED_ITEM);
+                pOutput.add(ModItems.END_PROSPERITY_REED_ITEM);
+                pOutput.add(ModItems.INFERIUM_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_INFERIUM_REED_ITEM);
+                pOutput.add(ModItems.NETHER_INFERIUM_REED_ITEM);
+                pOutput.add(ModItems.END_INFERIUM_REED_ITEM);
 
                 //Extreme Reactors
-                pOutput.accept(ModItems.ANGLESITE_REED_ITEM.get());
-                pOutput.accept(ModItems.BENITOITE_REED_ITEM.get());
-                pOutput.accept(ModItems.YELLORITE_REED_ITEM.get());
+                pOutput.add(ModItems.ANGLESITE_REED_ITEM);
+                pOutput.add(ModItems.BENITOITE_REED_ITEM);
+                pOutput.add(ModItems.YELLORITE_REED_ITEM);
 
                 //RFTools
-                pOutput.accept(ModItems.DIMENSIONALSHARD_REED_ITEM.get());
-                pOutput.accept(ModItems.NETHER_DIMENSIONALSHARD_REED_ITEM.get());
-                pOutput.accept(ModItems.END_DIMENSIONALSHARD_REED_ITEM.get());
+                pOutput.add(ModItems.DIMENSIONALSHARD_REED_ITEM);
+                pOutput.add(ModItems.NETHER_DIMENSIONALSHARD_REED_ITEM);
+                pOutput.add(ModItems.END_DIMENSIONALSHARD_REED_ITEM);
 
                 //Powah! Rearchitected
-                pOutput.accept(ModItems.URANITITE_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_URANITITE_REED_ITEM.get());
+                pOutput.add(ModItems.URANITITE_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_URANITITE_REED_ITEM);
 
                 //Create
-                pOutput.accept(ModItems.ZINC_REED_ITEM.get());
-                pOutput.accept(ModItems.DEEPSLATE_ZINC_REED_ITEM.get());
+                pOutput.add(ModItems.ZINC_REED_ITEM);
+                pOutput.add(ModItems.DEEPSLATE_ZINC_REED_ITEM);
 
-            })
-                    .build());
-    public static void register(IEventBus eventBus){
-        CREATIVE_MODE_TABS.register(eventBus);
+            }).build());
+
+    public static void registerItemGroups(){
+        GrowOres.LOGGER.info("Registering Item Groups for " + GrowOres.MOD_ID);
     }
 }

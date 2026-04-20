@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "growores",
+	"version": "${version}",
+	"name": "Kc's Growable Ores",
+	"description": "A revival of B0bGary's Growable Ores by Xsquad Kc",
+	"authors": [
+		"Xsquad Kc, B0bGary"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/kcs-growable-ores",
+		"sources": "https://github.com/XsquadKc/Growable-Ores"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/growores/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.kc.growores.GrowOres"
+		],
+		"fabric-datagen": [
+			"net.kc.growores.datagen.DataGenerators"
+		],
+		"client": [
+			"net.kc.growores.GrowOresClient"
+		]
+	},
+	"mixins": [
+		"growores.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

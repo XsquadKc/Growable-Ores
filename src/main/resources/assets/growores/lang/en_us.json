@@ -105,5 +105,5 @@
   "block.growores.zinc_reed": "Zinc Reeds",
   "block.growores.deepslate_zinc_reed": "Deepslate Zinc Reeds",
 
-  "creativetab.growores_tab": "Growable Ores"
+  "itemgroup.growores.growores_tab": "Growable Ores"
 }
