@@ -1,29 +1,30 @@
 package net.kc.growores.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
 import net.kc.growores.util.ModTags;
 
-import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.tags.BlockTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-    public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> lookupProvider) {
+public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
+    public ModBlockTagProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider);
     }
-    
+
+
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup lookup) {
-        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+    protected void addTags(HolderLookup.Provider registries) {
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.GROWING_BLOCK)
                 .add(ModBlocks.CLAY_REED);
 
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.COAL_REED)
                 .add(ModBlocks.IRON_REED)
                 .add(ModBlocks.COPPER_REED)
@@ -69,13 +70,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ZINC_REED)
                 .add(ModBlocks.DEEPSLATE_ZINC_REED);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+        valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.GROWING_BLOCK)
                 .add(ModBlocks.COAL_REED)
                 .add(ModBlocks.IRON_REED)
                 .add(ModBlocks.COPPER_REED);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+        valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GOLD_REED)
                 .add(ModBlocks.REDSTONE_REED)
                 .add(ModBlocks.LAPIS_REED)
@@ -92,13 +93,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NETHER_QUARTZ_REED)
                 .add(ModBlocks.NETHER_GOLD_REED);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+        valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.OBSIDIAN_REED)
                 .add(ModBlocks.BLAZE_REED)
                 .add(ModBlocks.ENDER_REED)
                 .add(ModBlocks.ANCIENT_DEBRIS_REED);
 
-        getOrCreateTagBuilder(ModTags.Blocks.GROWING_BLOCKS)
+        valueLookupBuilder(ModTags.Blocks.GROWING_BLOCKS)
                 .add(ModBlocks.GROWING_BLOCK);
     }
 }

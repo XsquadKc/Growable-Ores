@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.kc.growores.GrowOres"
+			"net.kc.growores.GrowOres"
 		],
 		"fabric-datagen": [
 			"net.kc.growores.datagen.DataGenerators"
@@ -30,8 +30,8 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
-		"minecraft": "~1.21.1",
-		"java": ">=21",
+		"minecraft": "~26.1",
+		"java": ">=25",
 		"fabric-api": "*"
 	}
 }

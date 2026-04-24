@@ -1,92 +1,91 @@
 package net.kc.growores.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.kc.growores.block.ModBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.loot.LootTable;
-import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LeafEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
-import net.minecraft.loot.function.ApplyBonusLootFunction;
-import net.minecraft.loot.function.SetCountLootFunction;
-import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
-    public ModBlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
+    public ModBlockLootTableProvider(FabricPackOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
         super(dataOutput, registryLookup);
     }
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.GROWING_BLOCK);
-        addDrop(ModBlocks.COAL_REED);
-        addDrop(ModBlocks.IRON_REED);
-        addDrop(ModBlocks.COPPER_REED);
-        addDrop(ModBlocks.GOLD_REED);
-        addDrop(ModBlocks.REDSTONE_REED);
-        addDrop(ModBlocks.LAPIS_REED);
-        addDrop(ModBlocks.DIAMOND_REED);
-        addDrop(ModBlocks.EMERALD_REED);
-        addDrop(ModBlocks.DEEPSLATE_COAL_REED);
-        addDrop(ModBlocks.DEEPSLATE_IRON_REED);
-        addDrop(ModBlocks.DEEPSLATE_COPPER_REED);
-        addDrop(ModBlocks.DEEPSLATE_GOLD_REED);
-        addDrop(ModBlocks.DEEPSLATE_REDSTONE_REED);
-        addDrop(ModBlocks.DEEPSLATE_LAPIS_REED);
-        addDrop(ModBlocks.DEEPSLATE_DIAMOND_REED);
-        addDrop(ModBlocks.DEEPSLATE_EMERALD_REED);
-        addDrop(ModBlocks.NETHER_QUARTZ_REED);
-        addDrop(ModBlocks.NETHER_GOLD_REED);
-        addDrop(ModBlocks.OBSIDIAN_REED);
-        addDrop(ModBlocks.GLOWSTONE_REED);
-        addDrop(ModBlocks.CLAY_REED);
-        addDrop(ModBlocks.BLAZE_REED);
-        addDrop(ModBlocks.ENDER_REED);
-        addDrop(ModBlocks.AMETHYST_REED);
-        addDrop(ModBlocks.ANCIENT_DEBRIS_REED);
+        dropSelf(ModBlocks.GROWING_BLOCK);
+        dropSelf(ModBlocks.COAL_REED);
+        dropSelf(ModBlocks.IRON_REED);
+        dropSelf(ModBlocks.COPPER_REED);
+        dropSelf(ModBlocks.GOLD_REED);
+        dropSelf(ModBlocks.REDSTONE_REED);
+        dropSelf(ModBlocks.LAPIS_REED);
+        dropSelf(ModBlocks.DIAMOND_REED);
+        dropSelf(ModBlocks.EMERALD_REED);
+        dropSelf(ModBlocks.DEEPSLATE_COAL_REED);
+        dropSelf(ModBlocks.DEEPSLATE_IRON_REED);
+        dropSelf(ModBlocks.DEEPSLATE_COPPER_REED);
+        dropSelf(ModBlocks.DEEPSLATE_GOLD_REED);
+        dropSelf(ModBlocks.DEEPSLATE_REDSTONE_REED);
+        dropSelf(ModBlocks.DEEPSLATE_LAPIS_REED);
+        dropSelf(ModBlocks.DEEPSLATE_DIAMOND_REED);
+        dropSelf(ModBlocks.DEEPSLATE_EMERALD_REED);
+        dropSelf(ModBlocks.NETHER_QUARTZ_REED);
+        dropSelf(ModBlocks.NETHER_GOLD_REED);
+        dropSelf(ModBlocks.OBSIDIAN_REED);
+        dropSelf(ModBlocks.GLOWSTONE_REED);
+        dropSelf(ModBlocks.CLAY_REED);
+        dropSelf(ModBlocks.BLAZE_REED);
+        dropSelf(ModBlocks.ENDER_REED);
+        dropSelf(ModBlocks.AMETHYST_REED);
+        dropSelf(ModBlocks.ANCIENT_DEBRIS_REED);
 
         //MODS
         //Applied Energistics 2
-        addDrop(ModBlocks.CERTUS_QUARTZ_REED);
+        dropSelf(ModBlocks.CERTUS_QUARTZ_REED);
 
         //Mystical Agriculture & Mystical Agradditions
-        addDrop(ModBlocks.SOULIUM_REED);
-        addDrop(ModBlocks.PROSPERITY_REED);
-        addDrop(ModBlocks.DEEPSLATE_PROSPERITY_REED);
-        addDrop(ModBlocks.NETHER_PROSPERITY_REED);
-        addDrop(ModBlocks.END_PROSPERITY_REED);
-        addDrop(ModBlocks.INFERIUM_REED);
-        addDrop(ModBlocks.DEEPSLATE_INFERIUM_REED);
-        addDrop(ModBlocks.NETHER_INFERIUM_REED);
-        addDrop(ModBlocks.END_INFERIUM_REED);
+        dropSelf(ModBlocks.SOULIUM_REED);
+        dropSelf(ModBlocks.PROSPERITY_REED);
+        dropSelf(ModBlocks.DEEPSLATE_PROSPERITY_REED);
+        dropSelf(ModBlocks.NETHER_PROSPERITY_REED);
+        dropSelf(ModBlocks.END_PROSPERITY_REED);
+        dropSelf(ModBlocks.INFERIUM_REED);
+        dropSelf(ModBlocks.DEEPSLATE_INFERIUM_REED);
+        dropSelf(ModBlocks.NETHER_INFERIUM_REED);
+        dropSelf(ModBlocks.END_INFERIUM_REED);
 
         //Extreme Reactors
-        addDrop(ModBlocks.ANGLESITE_REED);
-        addDrop(ModBlocks.BENITOITE_REED);
-        addDrop(ModBlocks.YELLORITE_REED);
+        dropSelf(ModBlocks.ANGLESITE_REED);
+        dropSelf(ModBlocks.BENITOITE_REED);
+        dropSelf(ModBlocks.YELLORITE_REED);
 
         //RFTools
-        addDrop(ModBlocks.DIMENSIONALSHARD_REED);
-        addDrop(ModBlocks.NETHER_DIMENSIONALSHARD_REED);
-        addDrop(ModBlocks.END_DIMENSIONALSHARD_REED);
+        dropSelf(ModBlocks.DIMENSIONALSHARD_REED);
+        dropSelf(ModBlocks.NETHER_DIMENSIONALSHARD_REED);
+        dropSelf(ModBlocks.END_DIMENSIONALSHARD_REED);
 
         //Powah! Rearchitected
-        addDrop(ModBlocks.URANINITE_REED);
-        addDrop(ModBlocks.DEEPSLATE_URANINITE_REED);
+        dropSelf(ModBlocks.URANINITE_REED);
+        dropSelf(ModBlocks.DEEPSLATE_URANINITE_REED);
 
         //Create
-        addDrop(ModBlocks.ZINC_REED);
-        addDrop(ModBlocks.DEEPSLATE_ZINC_REED);
+        dropSelf(ModBlocks.ZINC_REED);
+        dropSelf(ModBlocks.DEEPSLATE_ZINC_REED);
 
 
 
@@ -94,10 +93,10 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
 
 
     public LootTable.Builder createMultipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
-        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
-        return this.dropsWithSilkTouch(drop, this.applyExplosionDecay(drop, ((LeafEntry.Builder<?>)
-                ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
-                        .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
+        HolderLookup.RegistryLookup<Enchantment> enchantments = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return this.createSilkTouchDispatchTable(drop, this.applyExplosionDecay(drop,  LootItem.lootTableItem(item)
+                .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops))).apply(ApplyBonusCount
+                        .addOreBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))));
     }
 
 }
