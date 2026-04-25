@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:obsidian_reed"
+          "name": "growores:obsidian_reed_item"
         }
       ],
       "rolls": 1.0

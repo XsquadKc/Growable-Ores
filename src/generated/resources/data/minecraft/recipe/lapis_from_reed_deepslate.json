@@ -2,18 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "growores:deepslate_lapis_reed_item"
-    },
-    {
-      "item": "growores:deepslate_lapis_reed_item"
-    },
-    {
-      "item": "growores:deepslate_lapis_reed_item"
-    }
+    "growores:deepslate_lapis_reed_item",
+    "growores:deepslate_lapis_reed_item",
+    "growores:deepslate_lapis_reed_item"
   ],
   "result": {
-    "count": 1,
     "id": "minecraft:lapis_lazuli"
   }
 }

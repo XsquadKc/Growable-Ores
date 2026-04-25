@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:benitoite_reed"
+          "name": "growores:benitoite_reed_item"
         }
       ],
       "rolls": 1.0

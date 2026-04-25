@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:copper_reed"
+          "name": "growores:copper_reed_item"
         }
       ],
       "rolls": 1.0

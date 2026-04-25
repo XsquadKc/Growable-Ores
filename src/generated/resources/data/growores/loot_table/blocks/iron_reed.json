@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:iron_reed"
+          "name": "growores:iron_reed_item"
         }
       ],
       "rolls": 1.0

@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:ancient_debris_reed"
+          "name": "growores:ancient_debris_reed_item"
         }
       ],
       "rolls": 1.0

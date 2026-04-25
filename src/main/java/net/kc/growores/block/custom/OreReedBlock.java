@@ -37,7 +37,7 @@ public class OreReedBlock extends SugarCaneBlock {
 
     public int maxHeight;
     public OreReedBlock(Properties pProperties, int maxHeight) {
-        super(pProperties.noCollission().randomTicks().pushReaction(PushReaction.DESTROY));
+        super(pProperties.noCollision().randomTicks().pushReaction(PushReaction.DESTROY));
         this.maxHeight = maxHeight;
     }
 

@@ -2,21 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "growores:nether_quartz_reed_item"
-    },
-    {
-      "item": "growores:nether_quartz_reed_item"
-    },
-    {
-      "item": "growores:nether_quartz_reed_item"
-    },
-    {
-      "item": "growores:nether_quartz_reed_item"
-    }
+    "growores:nether_quartz_reed_item",
+    "growores:nether_quartz_reed_item",
+    "growores:nether_quartz_reed_item",
+    "growores:nether_quartz_reed_item"
   ],
   "result": {
-    "count": 1,
     "id": "minecraft:quartz"
   }
 }

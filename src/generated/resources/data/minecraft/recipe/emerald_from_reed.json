@@ -2,33 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    },
-    {
-      "item": "growores:emerald_reed_item"
-    }
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item",
+    "growores:emerald_reed_item"
   ],
   "result": {
-    "count": 1,
     "id": "minecraft:emerald"
   }
 }

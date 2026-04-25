@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:inferium_reed"
+          "name": "growores:inferium_reed_item"
         }
       ],
       "rolls": 1.0

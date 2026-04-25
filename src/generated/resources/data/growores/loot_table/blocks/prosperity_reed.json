@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:prosperity_reed"
+          "name": "growores:prosperity_reed_item"
         }
       ],
       "rolls": 1.0

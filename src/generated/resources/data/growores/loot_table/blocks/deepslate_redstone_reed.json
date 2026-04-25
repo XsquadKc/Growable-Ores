@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:deepslate_redstone_reed"
+          "name": "growores:deepslate_redstone_reed_item"
         }
       ],
       "rolls": 1.0

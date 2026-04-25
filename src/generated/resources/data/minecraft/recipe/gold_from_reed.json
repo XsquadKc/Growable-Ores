@@ -2,33 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    },
-    {
-      "item": "growores:gold_reed_item"
-    }
+    "growores:gold_reed_item",
+    "growores:gold_reed_item",
+    "growores:gold_reed_item",
+    "growores:gold_reed_item",
+    "growores:gold_reed_item",
+    "growores:gold_reed_item",
+    "growores:gold_reed_item",
+    "growores:gold_reed_item"
   ],
   "result": {
-    "count": 1,
     "id": "minecraft:raw_gold"
   }
 }

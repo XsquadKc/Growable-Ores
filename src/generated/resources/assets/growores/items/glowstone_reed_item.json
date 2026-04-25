@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "growores:item/glowstone_reed_item"
+  }
+}

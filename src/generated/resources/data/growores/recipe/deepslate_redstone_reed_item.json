@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": {
-      "item": "minecraft:sugar_cane"
-    },
-    "S": {
-      "item": "minecraft:deepslate"
-    },
-    "X": {
-      "item": "minecraft:redstone"
-    }
+    "R": "minecraft:sugar_cane",
+    "S": "minecraft:deepslate",
+    "X": "minecraft:redstone"
   },
   "pattern": [
     "RSR",
@@ -18,7 +12,6 @@
     "RSR"
   ],
   "result": {
-    "count": 1,
     "id": "growores:deepslate_redstone_reed_item"
   }
 }
