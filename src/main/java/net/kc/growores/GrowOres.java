@@ -4,15 +4,12 @@ import com.mojang.logging.LogUtils;
 import net.kc.growores.block.ModBlocks;
 import net.kc.growores.item.ModCreativeModeTabs;
 import net.kc.growores.item.ModItems;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.bus.BusGroup;
+import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -25,23 +22,24 @@ public class GrowOres {
     public static final String MOD_ID = "growores";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public GrowOres() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    public GrowOres(FMLJavaModLoadingContext context) {
+        BusGroup modBusGroup = context.getModBusGroup();
 
-        ModCreativeModeTabs.register(modEventBus);
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modBusGroup);
+        ModItems.register(modBusGroup);
+        ModBlocks.register(modBusGroup);
 
-        modEventBus.addListener(this::commonSetup);
+        FMLCommonSetupEvent.getBus(modBusGroup).addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
-    }
 
+    }
+    @SubscribeEvent
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
+    @SubscribeEvent
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
@@ -56,7 +54,7 @@ public class GrowOres {
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
-        @SubscribeEvent
+        @net.minecraftforge.eventbus.api.listener.SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
         }
     }
