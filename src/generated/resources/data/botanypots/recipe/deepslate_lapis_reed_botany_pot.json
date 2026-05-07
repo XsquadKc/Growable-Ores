@@ -1,0 +1,20 @@
+{
+  "type": "botanypots:block_derived_crop",
+  "block": "growores:deepslate_lapis_reed",
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "growores:deepslate_lapis_reed"
+      ]
+    }
+  ],
+  "input": {
+    "item": "growores:deepslate_lapis_reed_item"
+  },
+  "soil": {
+    "type": "bookshelf:block_tag",
+    "fabric:type": "bookshelf:block_tag",
+    "tag": "growores:growing_blocks"
+  }
+}

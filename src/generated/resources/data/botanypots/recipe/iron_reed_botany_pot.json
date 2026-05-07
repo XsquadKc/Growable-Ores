@@ -1,0 +1,20 @@
+{
+  "type": "botanypots:block_derived_crop",
+  "block": "growores:iron_reed",
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "growores:iron_reed"
+      ]
+    }
+  ],
+  "input": {
+    "item": "growores:iron_reed_item"
+  },
+  "soil": {
+    "type": "bookshelf:block_tag",
+    "fabric:type": "bookshelf:block_tag",
+    "tag": "growores:growing_blocks"
+  }
+}

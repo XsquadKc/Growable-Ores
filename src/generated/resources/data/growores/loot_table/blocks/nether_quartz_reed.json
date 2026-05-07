@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "growores:nether_quartz_reed"
+          "name": "growores:nether_quartz_reed_item"
         }
       ],
       "rolls": 1.0

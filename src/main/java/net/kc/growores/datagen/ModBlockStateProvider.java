@@ -19,35 +19,35 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.GROWING_BLOCK);
         //Add the following to the above *once* after adding new blocks, then move and replace generated block models
-        reedBlockWithItem(ModBlocks.COAL_REED);
-        reedBlockWithItem(ModBlocks.IRON_REED);
-        reedBlockWithItem(ModBlocks.COPPER_REED);
-        reedBlockWithItem(ModBlocks.GOLD_REED);
-        reedBlockWithItem(ModBlocks.REDSTONE_REED);
-        reedBlockWithItem(ModBlocks.LAPIS_REED);
-        reedBlockWithItem(ModBlocks.DIAMOND_REED);
-        reedBlockWithItem(ModBlocks.EMERALD_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_COAL_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_IRON_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_COPPER_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_GOLD_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_REDSTONE_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_LAPIS_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_DIAMOND_REED);
-        reedBlockWithItem(ModBlocks.DEEPSLATE_EMERALD_REED);
-        reedBlockWithItem(ModBlocks.NETHER_QUARTZ_REED);
-        reedBlockWithItem(ModBlocks.NETHER_GOLD_REED);
-        reedBlockWithItem(ModBlocks.OBSIDIAN_REED);
-        reedBlockWithItem(ModBlocks.GLOWSTONE_REED);
-        reedBlockWithItem(ModBlocks.CLAY_REED);
-        reedBlockWithItem(ModBlocks.BLAZE_REED);
-        reedBlockWithItem(ModBlocks.ENDER_REED);
-        reedBlockWithItem(ModBlocks.AMETHYST_REED);
-        reedBlockWithItem(ModBlocks.ANCIENT_DEBRIS_REED);
+        reedBlockWithoutItem(ModBlocks.COAL_REED);
+        reedBlockWithoutItem(ModBlocks.IRON_REED);
+        reedBlockWithoutItem(ModBlocks.COPPER_REED);
+        reedBlockWithoutItem(ModBlocks.GOLD_REED);
+        reedBlockWithoutItem(ModBlocks.REDSTONE_REED);
+        reedBlockWithoutItem(ModBlocks.LAPIS_REED);
+        reedBlockWithoutItem(ModBlocks.DIAMOND_REED);
+        reedBlockWithoutItem(ModBlocks.EMERALD_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_COAL_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_IRON_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_COPPER_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_GOLD_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_REDSTONE_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_LAPIS_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_DIAMOND_REED);
+        reedBlockWithoutItem(ModBlocks.DEEPSLATE_EMERALD_REED);
+        reedBlockWithoutItem(ModBlocks.NETHER_QUARTZ_REED);
+        reedBlockWithoutItem(ModBlocks.NETHER_GOLD_REED);
+        reedBlockWithoutItem(ModBlocks.OBSIDIAN_REED);
+        reedBlockWithoutItem(ModBlocks.GLOWSTONE_REED);
+        reedBlockWithoutItem(ModBlocks.CLAY_REED);
+        reedBlockWithoutItem(ModBlocks.BLAZE_REED);
+        reedBlockWithoutItem(ModBlocks.ENDER_REED);
+        reedBlockWithoutItem(ModBlocks.AMETHYST_REED);
+        reedBlockWithoutItem(ModBlocks.ANCIENT_DEBRIS_REED);
 
         //MODS
         //Applied Energistics 2
-        reedBlockWithItem(ModBlocks.CERTUS_QUARTZ_REED);
+        reedBlockWithoutItem(ModBlocks.CERTUS_QUARTZ_REED);
 
         //Mystical Agriculture & Mystical Agradditions
         reedBlockWithoutItem(ModBlocks.SOULIUM_REED);
