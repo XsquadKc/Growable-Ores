@@ -2,6 +2,7 @@ package net.kc.growores.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.kc.growores.datagen.custom.BotanyPotsCropProvider;
 
 public class DataGenerators implements DataGeneratorEntrypoint {
 	@Override
@@ -13,5 +14,6 @@ public class DataGenerators implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(BotanyPotsCropProvider::new);
 	}
 }

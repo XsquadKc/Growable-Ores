@@ -1,0 +1,20 @@
+{
+  "type": "botanypots:block_derived_crop",
+  "block": "growores:ancient_debris_reed",
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "growores:ancient_debris_reed"
+      ]
+    }
+  ],
+  "input": {
+    "item": "growores:ancient_debris_reed_item"
+  },
+  "soil": {
+    "fabric:type": "bookshelf:block_tag",
+    "type": "bookshelf:block_tag",
+    "tag": "growores:growing_blocks"
+  }
+}
