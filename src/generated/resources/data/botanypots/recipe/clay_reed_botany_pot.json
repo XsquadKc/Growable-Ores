@@ -1,0 +1,20 @@
+{
+  "type": "botanypots:block_derived_crop",
+  "block": "growores:clay_reed",
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "growores:clay_reed"
+      ]
+    }
+  ],
+  "input": {
+    "item": "growores:clay_reed_item"
+  },
+  "soil": {
+    "type": "bookshelf:block_tag",
+    "fabric:type": "bookshelf:block_tag",
+    "tag": "growores:growing_blocks"
+  }
+}
