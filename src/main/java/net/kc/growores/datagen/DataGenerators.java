@@ -1,6 +1,7 @@
 package net.kc.growores.datagen;
 
 import net.kc.growores.GrowOres;
+import net.kc.growores.datagen.custom.BotanyPotsCropProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -29,5 +30,6 @@ public class DataGenerators {
         ModBlockTagProvider blockTagGenerator = generator.addProvider(event.includeServer(),
                 new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new BotanyPotsCropProvider(packOutput));
     }
 }

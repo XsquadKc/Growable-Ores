@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:crop",
+  "categories": "growing_blocks",
+  "display": [
+    {
+      "block": "growores:deepslate_copper_reed"
+    },
+    {
+      "block": "growores:deepslate_copper_reed"
+    }
+  ],
+  "drops": {
+    "chance": 1.0,
+    "output": {
+      "item": "growores:deepslate_copper_reed_item"
+    }
+  },
+  "growthTicks": 1200,
+  "seed": {
+    "item": "growores:deepslate_copper_reed_item"
+  }
+}

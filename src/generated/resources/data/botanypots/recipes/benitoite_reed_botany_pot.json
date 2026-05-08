@@ -1,0 +1,22 @@
+{
+  "type": "botanypots:crop",
+  "categories": "growing_blocks",
+  "display": [
+    {
+      "block": "growores:benitoite_reed"
+    },
+    {
+      "block": "growores:benitoite_reed"
+    }
+  ],
+  "drops": {
+    "chance": 1.0,
+    "output": {
+      "item": "growores:benitoite_reed_item"
+    }
+  },
+  "growthTicks": 1200,
+  "seed": {
+    "item": "growores:benitoite_reed_item"
+  }
+}

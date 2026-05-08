@@ -84,9 +84,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(),
-            new ResourceLocation("item/generated")).texture("layer0",
-            new ResourceLocation(GrowOres.MOD_ID,"item/" + item.getId().getPath()));
+        return withExistingParent(item.getId().getPath(), mcLoc("item/generated")).texture("layer0", new ResourceLocation(GrowOres.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     public void reedBlock(RegistryObject<Block> block) {
