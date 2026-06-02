@@ -31,6 +31,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> GROWING_BLOCK = registerBlock("growing_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.GRAVEL)));
 
+    public static final RegistryObject<Block> ORE_REED = BLOCKS.register(
+            "ore_reed",
+            () -> new OreReedBlock(BlockBehaviour.Properties.copy(Blocks.STONE), 4, true)
+    );
+
+    public static final RegistryObject<Block> ORE_REED_DISPLAY = BLOCKS.register(
+            "ore_reed_display",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SUGAR_CANE).noCollission())
+    );
+
     //Reeds
     public static final RegistryObject<Block> COAL_REED = registerReedBlock("coal_reed", Blocks.COAL_ORE, 5);
     public static final RegistryObject<Block> IRON_REED = registerReedBlock("iron_reed", Blocks.IRON_ORE, 4);

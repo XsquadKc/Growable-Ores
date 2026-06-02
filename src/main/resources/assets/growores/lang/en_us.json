@@ -50,8 +50,11 @@
 
   "item.growores.zinc_reed_item": "Zinc Reeds",
   "item.growores.deepslate_zinc_reed_item": "Deepslate Zinc Reeds",
+  "item.growores.ore_reed_item": "Ore Reeds",
+  "item.growores.ore_reed_item.named": "%s Reeds",
 
   "block.growores.growing_block": "Growing Block",
+  "block.growores.ore_reed": "Ore Reeds",
 
   "block.growores.coal_reed": "Coal Reeds",
   "block.growores.iron_reed": "Iron Reeds",

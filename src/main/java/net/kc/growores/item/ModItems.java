@@ -2,12 +2,9 @@ package net.kc.growores.item;
 
 import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
-import net.kc.growores.block.custom.OreReedBlock;
+import net.kc.growores.item.custom.OreReedItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +12,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GrowOres.MOD_ID);
+
+    public static final RegistryObject<Item> ORE_REED_ITEM = ITEMS.register("ore_reed_item",
+            () -> new OreReedItem(ModBlocks.ORE_REED.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> COAL_REED_ITEM = ITEMS.register("coal_reed_item",
             () -> new ItemNameBlockItem(ModBlocks.COAL_REED.get(), new Item.Properties()));

@@ -1,4 +1,4 @@
-// 1.20.1	2026-04-18T23:22:14.2659706	Block States: growores
+// 1.20.1	2026-06-02T22:07:18.3563529	Block States: growores
 5966bef4aeafb8d7c2861c956ce115388e9078bc assets/growores/blockstates/amethyst_reed.json
 ee0fd9e501459e6610208b12a9918bba34c461f6 assets/growores/blockstates/ancient_debris_reed.json
 561c54476a9a934fa3f357db105f97f6f1b327c7 assets/growores/blockstates/anglesite_reed.json
@@ -39,6 +39,7 @@ f5e525cac4db1ca4cd0cad8836e14db17e760480 assets/growores/blockstates/nether_gold
 aca13fa3900bca92afd551299df90e16408b96de assets/growores/blockstates/nether_prosperity_reed.json
 400b25321d4c521f81ae0bd346675025558af787 assets/growores/blockstates/nether_quartz_reed.json
 1b4f6aa53e09c66c3c582494426d316c2269eb3e assets/growores/blockstates/obsidian_reed.json
+15bda5517c000e5b9f5dc3b35065ef22adcede97 assets/growores/blockstates/ore_reed_display.json
 fbbc6800dc977b8227a292ab4e604393f577a0e2 assets/growores/blockstates/prosperity_reed.json
 69facbf5a48187dfb3b673ff3fcc752923f196fd assets/growores/blockstates/redstone_reed.json
 6e65fd8b25e82485c441651514fd2bd3325090bb assets/growores/blockstates/soulium_reed.json
@@ -85,6 +86,7 @@ e9faf7a24d32ed44ec02f1cf8895c864cab08a76 assets/growores/models/block/nether_inf
 9af5a5055b1c72bc3f02278a8987add5910f556b assets/growores/models/block/nether_prosperity_reed.json
 ac2ef4c1c50acc06fb271047c393682c68656b8b assets/growores/models/block/nether_quartz_reed.json
 b52f03fa9c35dcc6fcc5f9b89afb6d77c9c8b3b7 assets/growores/models/block/obsidian_reed.json
+d49f5014d9e9ca6489a8d36b7b7b76e0340602f2 assets/growores/models/block/ore_reed_display.json
 9d82adc1b2cc4e7ab3bd23eac42cb9aa7d69901e assets/growores/models/block/prosperity_reed.json
 5d26e57f0b76e0787969d690ba1205c4c32292bc assets/growores/models/block/redstone_reed.json
 7c94bbfaa0dfb5e04d3436c5e9978310827e6cbe assets/growores/models/block/soulium_reed.json

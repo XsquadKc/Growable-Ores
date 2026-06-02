@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "growores:block/ore_reed"
+    }
+  }
+}

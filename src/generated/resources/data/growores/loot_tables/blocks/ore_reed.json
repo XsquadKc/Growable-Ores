@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{BlockEntityTag:{}}"
+    },
+    {
+      "function": "minecraft:copy_nbt",
+      "ops": [
+        {
+          "op": "replace",
+          "source": "Ore",
+          "target": "Ore"
+        },
+        {
+          "op": "replace",
+          "source": "ItemTexture",
+          "target": "ItemTexture"
+        },
+        {
+          "op": "replace",
+          "source": "BlockTexture",
+          "target": "BlockTexture"
+        },
+        {
+          "op": "replace",
+          "source": "Ore",
+          "target": "BlockEntityTag.Ore"
+        },
+        {
+          "op": "replace",
+          "source": "ItemTexture",
+          "target": "BlockEntityTag.ItemTexture"
+        },
+        {
+          "op": "replace",
+          "source": "BlockTexture",
+          "target": "BlockEntityTag.BlockTexture"
+        }
+      ],
+      "source": "block_entity"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "growores:ore_reed_item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "growores:blocks/ore_reed"
+}

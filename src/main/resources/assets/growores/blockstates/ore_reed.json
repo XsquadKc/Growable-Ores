@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "age=0": { "model": "growores:block/ore_reed" },
+    "age=1": { "model": "growores:block/ore_reed" },
+    "age=2": { "model": "growores:block/ore_reed" },
+    "age=3": { "model": "growores:block/ore_reed" },
+    "age=4": { "model": "growores:block/ore_reed" },
+    "age=5": { "model": "growores:block/ore_reed" },
+    "age=6": { "model": "growores:block/ore_reed" },
+    "age=7": { "model": "growores:block/ore_reed" },
+    "age=8": { "model": "growores:block/ore_reed" },
+    "age=9": { "model": "growores:block/ore_reed" },
+    "age=10": { "model": "growores:block/ore_reed" },
+    "age=11": { "model": "growores:block/ore_reed" },
+    "age=12": { "model": "growores:block/ore_reed" },
+    "age=13": { "model": "growores:block/ore_reed" },
+    "age=14": { "model": "growores:block/ore_reed" },
+    "age=15": { "model": "growores:block/ore_reed" }
+  }
+}

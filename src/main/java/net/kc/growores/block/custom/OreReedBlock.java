@@ -1,9 +1,11 @@
 package net.kc.growores.block.custom;
 
+import net.kc.growores.block.entity.OreReedBlockEntity;
 import net.kc.growores.item.ModItems;
 import net.kc.growores.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -20,8 +22,11 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SugarCaneBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -33,12 +38,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class OreReedBlock extends SugarCaneBlock {
+public class OreReedBlock extends SugarCaneBlock implements EntityBlock {
 
     public int maxHeight;
+    private final boolean dynamicTextures;
+
     public OreReedBlock(Properties pProperties, int maxHeight) {
+        this(pProperties, maxHeight, false);
+    }
+
+    public OreReedBlock(Properties pProperties, int maxHeight, boolean dynamicTextures) {
         super(pProperties.noCollission().randomTicks().pushReaction(PushReaction.DESTROY));
         this.maxHeight = maxHeight;
+        this.dynamicTextures = dynamicTextures;
     }
 
     @Override
@@ -53,6 +65,7 @@ public class OreReedBlock extends SugarCaneBlock {
                 if (net.minecraftforge.common.ForgeHooks.onCropsGrowPre(pLevel, pPos, pState, true)) {
                     if (j == 15) {
                         pLevel.setBlockAndUpdate(pPos.above(), this.defaultBlockState());
+                        copyDynamicData(pLevel, pPos, pPos.above());
                         net.minecraftforge.common.ForgeHooks.onCropsGrowPost(pLevel, pPos.above(), this.defaultBlockState());
                         pLevel.setBlock(pPos, pState.setValue(AGE, Integer.valueOf(0)), 4);
                     } else {
@@ -71,6 +84,29 @@ public class OreReedBlock extends SugarCaneBlock {
             return true;
         } else {
             return blockstate.is(ModTags.Blocks.GROWING_BLOCKS);
+        }
+    }
+
+    @Override
+    public RenderShape getRenderShape(BlockState pState) {
+        return dynamicTextures ? RenderShape.ENTITYBLOCK_ANIMATED : RenderShape.MODEL;
+    }
+
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return dynamicTextures ? new OreReedBlockEntity(pPos, pState) : null;
+    }
+
+    private void copyDynamicData(Level level, BlockPos sourcePos, BlockPos targetPos) {
+        if (!dynamicTextures) {
+            return;
+        }
+
+        BlockEntity source = level.getBlockEntity(sourcePos);
+        BlockEntity target = level.getBlockEntity(targetPos);
+
+        if (source instanceof OreReedBlockEntity sourceReed && target instanceof OreReedBlockEntity targetReed) {
+            targetReed.setReedData(sourceReed.getReedData().copy());
         }
     }
 

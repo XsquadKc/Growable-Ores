@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-19T19:19:27.8775972	Loot Tables
+// 1.20.1	2026-06-02T22:07:18.3543524	Loot Tables
 47efcaf348fc1ebadfb6573581fbb11dac601754 data/growores/loot_tables/blocks/amethyst_reed.json
 0960802dda284e08e75148201bdba8e451af37ae data/growores/loot_tables/blocks/ancient_debris_reed.json
 359ee2e425e560533d499ad11a773b51a250679c data/growores/loot_tables/blocks/anglesite_reed.json
@@ -39,6 +39,8 @@ ef5df837288522bee673877e101e6d3db221de96 data/growores/loot_tables/blocks/nether
 84f0ef4736deb142cb57757fe048218473ada3c1 data/growores/loot_tables/blocks/nether_prosperity_reed.json
 202a30c74497011e46cebc276a0fa83819d60f5f data/growores/loot_tables/blocks/nether_quartz_reed.json
 257f86c7a7f4364960092aaeedd51f2afa8b682f data/growores/loot_tables/blocks/obsidian_reed.json
+c8ba151dd190d70db7dfe7be16f38cd8fa0df67f data/growores/loot_tables/blocks/ore_reed.json
+b894b9f8450830dc6c44ed7538feb9a8e0ae186b data/growores/loot_tables/blocks/ore_reed_display.json
 9430c38af6e150bcf0ef9952a4e9db52f690d85f data/growores/loot_tables/blocks/prosperity_reed.json
 299a775f3fef5ec353dcaf09e4de0f4b2775ccb5 data/growores/loot_tables/blocks/redstone_reed.json
 1248a46305a702117a24ce8cb52df9444f57beec data/growores/loot_tables/blocks/soulium_reed.json

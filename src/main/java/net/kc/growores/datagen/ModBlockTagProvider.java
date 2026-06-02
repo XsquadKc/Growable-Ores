@@ -25,6 +25,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.CLAY_REED.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.ORE_REED.get())
                 .add(ModBlocks.COAL_REED.get())
                 .add(ModBlocks.IRON_REED.get())
                 .add(ModBlocks.COPPER_REED.get())
@@ -69,6 +70,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_URANINITE_REED.get())
                 .add(ModBlocks.ZINC_REED.get())
                 .add(ModBlocks.DEEPSLATE_ZINC_REED.get());
+
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.GROWING_BLOCK.get())

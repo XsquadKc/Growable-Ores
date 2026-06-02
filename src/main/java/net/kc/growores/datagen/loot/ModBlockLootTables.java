@@ -1,6 +1,8 @@
 package net.kc.growores.datagen.loot;
 
 import net.kc.growores.block.ModBlocks;
+import net.kc.growores.dynamic.OreReedData;
+import net.kc.growores.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -9,8 +11,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.CopyNbtFunction;
+import net.minecraft.world.level.storage.loot.functions.SetNbtFunction;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -23,6 +29,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.GROWING_BLOCK.get());
+        this.add(ModBlocks.ORE_REED_DISPLAY.get(), noDrop());
+        this.add(ModBlocks.ORE_REED.get(), this::createOreReedDrops);
         this.dropSelf(ModBlocks.COAL_REED.get());
         this.dropSelf(ModBlocks.IRON_REED.get());
         this.dropSelf(ModBlocks.COPPER_REED.get());
@@ -84,6 +92,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
 
 
+    }
+
+    private LootTable.Builder createOreReedDrops(Block block) {
+        CompoundTag tag = new CompoundTag();
+        tag.put("BlockEntityTag", new CompoundTag());
+
+        return createSingleItemTable(ModItems.ORE_REED_ITEM.get())
+                .apply(SetNbtFunction.setTag(tag))
+                .apply(CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
+                        .copy(OreReedData.ORE, OreReedData.ORE)
+                        .copy(OreReedData.ITEM_TEXTURE, OreReedData.ITEM_TEXTURE)
+                        .copy(OreReedData.BLOCK_TEXTURE, OreReedData.BLOCK_TEXTURE)
+                        .copy(OreReedData.ORE, "BlockEntityTag." + OreReedData.ORE)
+                        .copy(OreReedData.ITEM_TEXTURE, "BlockEntityTag." + OreReedData.ITEM_TEXTURE)
+                        .copy(OreReedData.BLOCK_TEXTURE, "BlockEntityTag." + OreReedData.BLOCK_TEXTURE));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item) {
