@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-20T17:18:13.1120656	Kc's Growable Ores/Recipes
+// 1.20.1	2026-10-20T18:16:52.4085633	Kc's Growable Ores/Recipes
 7c1f3b7e6f1f9855042e951cac0364753907a116 data\growores\advancements\recipes\misc\glowstone_reed_item.json
 3d38c50e1c9ea371735f27d3c2242173f4ccddca data\growores\advancements\recipes\misc\growing_block.json
 7ec194f02a34f10cced58800bb60db38775f54fe data\growores\advancements\recipes\misc\clay_from_reed.json
@@ -21,8 +21,8 @@ f9ea98f6c2e6c5000b8b4c9d9c6dd79679a46254 data\growores\advancements\recipes\misc
 cf61153a2b15f450f68bea43366dcdb7de69a51e data\growores\recipes\nether_gold_reed_item.json
 bdbbe15a950446c141715432f03dc6970f6a79ca data\growores\advancements\recipes\misc\gold_nugget_from_reed.json
 7c1f5aa077a93047d9e5fd42eabbd209a633620a data\growores\recipes\iron_reed_item.json
-f570a1a40974d96ca29b925b6cb23682b7664ecc data\growores\advancements\recipes\misc\coal_from_reed.json
 d071215660466112896cc827921389d97709295b data\growores\advancements\recipes\misc\quartz_from_reed.json
+f570a1a40974d96ca29b925b6cb23682b7664ecc data\growores\advancements\recipes\misc\coal_from_reed.json
 a5ae12a7a21e33185917c911ad7a9003d8ac3bd8 data\growores\recipes\obsidian_reed_item.json
 0069382e6fbd0bc6c95376091730c76c5d4c9f23 data\growores\recipes\lapis_from_reed_deepslate.json
 70950b175386fe2b06897df9fc0c9d312ed6d5a9 data\growores\advancements\recipes\misc\deepslate_emerald_reed_item.json
@@ -85,9 +85,9 @@ bbbc2ca60d99eb86b2824de48b9b1d9477fc2c83 data\growores\advancements\recipes\misc
 685f139c39e14b0bdd4fe2567a25cbe9a98996a0 data\growores\advancements\recipes\misc\coal_from_reed_deepslate.json
 155592e1982ac5c22b6d3d411c69594d65ad5996 data\growores\advancements\recipes\misc\ender_pearl_from_reed.json
 1c0d872ec4f692087d517da6446bfe0a5499f2e7 data\growores\advancements\recipes\misc\clay_reed_item.json
-2da9891583bcb3cf0db04e1dfb4a177eaa64fc85 data\growores\advancements\recipes\misc\lapis_reed_item.json
-2187eebfc6864fe24a39aa2af0e8a5bbb5d6f726 data\growores\advancements\recipes\misc\deepslate_gold_reed_item.json
 3899f9e53d02ca6f0d86fe25870018508c931891 data\growores\recipes\ender_reed_item.json
+2187eebfc6864fe24a39aa2af0e8a5bbb5d6f726 data\growores\advancements\recipes\misc\deepslate_gold_reed_item.json
+2da9891583bcb3cf0db04e1dfb4a177eaa64fc85 data\growores\advancements\recipes\misc\lapis_reed_item.json
 47beb6a11db407693d892d331fc8907f04f366fa data\growores\recipes\amethyst_shard_from_reed.json
 7fc25ece16dcf75b2ff6de543d0e70c7229f35d8 data\growores\recipes\clay_reed_item.json
 0eca709637a9205c5f424c253f1010544de82d2b data\growores\advancements\recipes\misc\obsidian_from_reed.json

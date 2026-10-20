@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:crop",
+  "categories": [
+    "growing_blocks"
+  ],
+  "display": {
+    "block": "growores:prosperity_reed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "growores:prosperity_reed_item"
+      }
+    }
+  ],
+  "growthTicks": 1200,
+  "seed": {
+    "item": "growores:prosperity_reed_item"
+  }
+}

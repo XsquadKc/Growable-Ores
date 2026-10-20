@@ -29,14 +29,7 @@ public class BotanyPotsCropProvider implements DataProvider {
                 generateCrop(cache, "emerald"),
                 generateCrop(cache, "redstone"),
                 generateCrop(cache, "lapis"),
-                generateCrop(cache, "coal"),
-                generateCrop(cache, "iron"),
                 generateCrop(cache, "copper"),
-                generateCrop(cache, "gold"),
-                generateCrop(cache, "redstone"),
-                generateCrop(cache, "lapis"),
-                generateCrop(cache, "diamond"),
-                generateCrop(cache, "emerald"),
                 generateCrop(cache, "deepslate_coal"),
                 generateCrop(cache, "deepslate_iron"),
                 generateCrop(cache, "deepslate_copper"),
@@ -91,61 +84,60 @@ public class BotanyPotsCropProvider implements DataProvider {
         JsonObject root = new JsonObject();
 
         /*
-         * bookshelf:load_conditions
-         */
-
-        JsonArray loadConditions = new JsonArray();
-
-        JsonObject condition = new JsonObject();
-        condition.addProperty("type", "bookshelf:block_exists");
-
-        JsonArray values = new JsonArray();
-        values.add(reedBlock);
-
-        condition.add("values", values);
-
-        loadConditions.add(condition);
-
-        root.add("bookshelf:load_conditions", loadConditions);
-
-        /*
          * type
          */
 
-        root.addProperty("type", "botanypots:block_derived_crop");
+        root.addProperty("type", "botanypots:crop");
 
         /*
-         * block
+         * display
          */
+        JsonObject display = new JsonObject();
 
-        root.addProperty("block", reedBlock);
+        display.addProperty("block", reedBlock);
+        root.add("display", display);
 
         /*
-         * input
+         * growthTicks
          */
 
-        JsonObject input = new JsonObject();
-        input.addProperty("item", reedItem);
-
-        root.add("input", input);
+        root.addProperty("growthTicks", 1200);
 
         /*
-         * soil
+         * seed
          */
 
-        JsonObject soil = new JsonObject();
+        JsonObject seed = new JsonObject();
+        seed.addProperty("item", reedItem);
 
-        soil.addProperty("type", "bookshelf:block_tag");
+        root.add("seed", seed);
 
-        // Needed for cross-loader compatibility
-        soil.addProperty("fabric:type", "bookshelf:block_tag");
+        /*
+         * categories
+         */
 
-        soil.addProperty("tag", "growores:growing_blocks");
+        JsonArray categories = new JsonArray();
+        categories.add("growing_blocks");
+        root.add("categories", categories);
 
-        root.add("soil", soil);
+        /*
+         * drops
+         */
+
+        JsonArray drops = new JsonArray();
+        JsonObject drop = new JsonObject();
+
+        drop.addProperty("chance", 1.00);
+
+        JsonObject outputs = new JsonObject();
+        outputs.addProperty("item", reedItem);
+
+        drop.add("output", outputs);
+        drops.add(drop);
+        root.add("drops", drops);
 
         Path path = output.getPath()
-                .resolve("data/botanypots/recipe/" +
+                .resolve("data/botanypots/recipes/" +
                         oreName + "_reed_botany_pot.json");
 
         return DataProvider.writeToPath(cache, root, path);

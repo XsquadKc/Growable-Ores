@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-20T17:18:13.1140674	Kc's Growable Ores/Block Loot Tables
+// 1.20.1	2026-10-20T18:16:52.4125627	Kc's Growable Ores/Block Loot Tables
 061ce86d92fc90abd511979c27baf646bfd36e28 data\growores\loot_tables\blocks\soulium_reed.json
 cdf0f8a4adb715e0f2079578d524183012a8ecc2 data\growores\loot_tables\blocks\amethyst_reed.json
 83c4c1ffad483dfea28b73c20b29cb5999415574 data\growores\loot_tables\blocks\emerald_reed.json
@@ -8,9 +8,9 @@ d0a4639c5bb587482f6442e53da1be4b572e70c9 data\growores\loot_tables\blocks\nether
 5cef488c23e69914d3a777c3bd8c7c5dd4ba8bfe data\growores\loot_tables\blocks\deepslate_prosperity_reed.json
 a83e239db7eabd1e04b678a7c017b02db24d8cf3 data\growores\loot_tables\blocks\copper_reed.json
 c7303102a50faf86fbb36f4490ca098bfb808392 data\growores\loot_tables\blocks\nether_prosperity_reed.json
-230b391597fd3e1166d57d3ab448ba86d27745af data\growores\loot_tables\blocks\end_dimensionalshard_reed.json
-d89d8b19552ceb669bab4e250fa94a5fcec206b1 data\growores\loot_tables\blocks\deepslate_emerald_reed.json
 21b8c22e5ed50fe449de64b8c41c446fbc01170a data\growores\loot_tables\blocks\deepslate_gold_reed.json
+d89d8b19552ceb669bab4e250fa94a5fcec206b1 data\growores\loot_tables\blocks\deepslate_emerald_reed.json
+230b391597fd3e1166d57d3ab448ba86d27745af data\growores\loot_tables\blocks\end_dimensionalshard_reed.json
 e79cf962acf340b44234334dd8d3ad383cd2b799 data\growores\loot_tables\blocks\deepslate_iron_reed.json
 31400d9d607a2c568c3c8865c109b52e4fba79d6 data\growores\loot_tables\blocks\glowstone_reed.json
 9ded434735aedfd044ccdd6c952019eb36232948 data\growores\loot_tables\blocks\coal_reed.json

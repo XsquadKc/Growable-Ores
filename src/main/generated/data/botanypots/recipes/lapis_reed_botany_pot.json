@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:crop",
+  "categories": [
+    "growing_blocks"
+  ],
+  "display": {
+    "block": "growores:lapis_reed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "growores:lapis_reed_item"
+      }
+    }
+  ],
+  "growthTicks": 1200,
+  "seed": {
+    "item": "growores:lapis_reed_item"
+  }
+}

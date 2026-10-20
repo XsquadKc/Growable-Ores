@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:crop",
+  "categories": [
+    "growing_blocks"
+  ],
+  "display": {
+    "block": "growores:copper_reed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "growores:copper_reed_item"
+      }
+    }
+  ],
+  "growthTicks": 1200,
+  "seed": {
+    "item": "growores:copper_reed_item"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "botanypots:crop",
+  "categories": [
+    "growing_blocks"
+  ],
+  "display": {
+    "block": "growores:inferium_reed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "growores:inferium_reed_item"
+      }
+    }
+  ],
+  "growthTicks": 1200,
+  "seed": {
+    "item": "growores:inferium_reed_item"
+  }
+}
