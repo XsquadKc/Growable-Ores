@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:amethyst_reed_item"
+    }
+  ],
+  "result": {
+    "item": "minecraft:amethyst_shard"
+  }
+}

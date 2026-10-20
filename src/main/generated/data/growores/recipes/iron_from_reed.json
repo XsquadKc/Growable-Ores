@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    },
+    {
+      "item": "growores:iron_reed_item"
+    }
+  ],
+  "result": {
+    "item": "minecraft:raw_iron"
+  }
+}

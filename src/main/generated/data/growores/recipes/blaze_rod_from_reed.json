@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:blaze_reed_item"
+    },
+    {
+      "item": "growores:blaze_reed_item"
+    },
+    {
+      "item": "growores:blaze_reed_item"
+    },
+    {
+      "item": "growores:blaze_reed_item"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blaze_rod"
+  }
+}

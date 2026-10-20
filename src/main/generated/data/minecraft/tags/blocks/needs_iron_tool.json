@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "growores:gold_reed",
+    "growores:redstone_reed",
+    "growores:lapis_reed",
+    "growores:diamond_reed",
+    "growores:emerald_reed",
+    "growores:deepslate_coal_reed",
+    "growores:deepslate_iron_reed",
+    "growores:deepslate_copper_reed",
+    "growores:deepslate_gold_reed",
+    "growores:deepslate_redstone_reed",
+    "growores:deepslate_lapis_reed",
+    "growores:deepslate_diamond_reed",
+    "growores:deepslate_emerald_reed",
+    "growores:nether_quartz_reed",
+    "growores:nether_gold_reed"
+  ]
+}

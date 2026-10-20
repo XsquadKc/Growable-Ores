@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:sugar_cane"
+    },
+    "X": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    "RXR",
+    "RXR",
+    "RXR"
+  ],
+  "result": {
+    "item": "growores:ender_reed_item"
+  },
+  "show_notification": true
+}

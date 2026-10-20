@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:clay_reed_item"
+    },
+    {
+      "item": "growores:clay_reed_item"
+    },
+    {
+      "item": "growores:clay_reed_item"
+    },
+    {
+      "item": "growores:clay_reed_item"
+    }
+  ],
+  "result": {
+    "item": "minecraft:clay"
+  }
+}

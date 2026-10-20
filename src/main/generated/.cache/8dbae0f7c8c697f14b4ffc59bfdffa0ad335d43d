@@ -1,7 +1,7 @@
-// 1.21.1	2026-05-07T18:46:24.6190298	Kc's Growable Ores/Tags for minecraft:block
-dfcfae7db003d73262e43669d225aa7903bd1f24 data\minecraft\tags\block\mineable\pickaxe.json
-3b1583fa8a247c275c024c467d1710be537ff007 data\minecraft\tags\block\needs_iron_tool.json
-76ffd36ea1f5e8d0de2cf15b7e5658ba4f442712 data\minecraft\tags\block\needs_diamond_tool.json
-2a85ff98e2e9312a1b209e5ae4db46489fb9996d data\minecraft\tags\block\needs_stone_tool.json
-781aead768dc71919e9e08ca8cd9ed7371decb69 data\growores\tags\block\growing_blocks.json
-50612c4b8e45812cdab85a319ab4e02d44024b66 data\minecraft\tags\block\mineable\shovel.json
+// 1.20.1	2026-10-20T17:18:13.1130653	Kc's Growable Ores/Tags for minecraft:block
+4a0f5501fb6f5b98aa707394e1146cbcbd24c194 data\growores\tags\blocks\growing_blocks.json
+eac9b7de04308477ee2ce718d1f4e97b5067a06d data\minecraft\tags\blocks\needs_iron_tool.json
+fbf7d2ba6e8bba68ba7f18044242e60dacc34a04 data\minecraft\tags\blocks\needs_stone_tool.json
+12daf1da93801ec4de104774c80a8c3755ec5a92 data\minecraft\tags\blocks\needs_diamond_tool.json
+e663049c031c30315d7b58fff5c8d2f9f7baacd3 data\minecraft\tags\blocks\mineable\pickaxe.json
+a55d12d1da4af2647549cc50fd815c89439782fa data\minecraft\tags\blocks\mineable\shovel.json

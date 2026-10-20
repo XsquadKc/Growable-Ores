@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "growores:obsidian_reed_item"
+    },
+    {
+      "item": "growores:obsidian_reed_item"
+    },
+    {
+      "item": "growores:obsidian_reed_item"
+    },
+    {
+      "item": "growores:obsidian_reed_item"
+    }
+  ],
+  "result": {
+    "item": "minecraft:obsidian"
+  }
+}

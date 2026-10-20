@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:sugar_cane"
+    },
+    "S": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "RSR",
+    "RSR",
+    "RSR"
+  ],
+  "result": {
+    "item": "growores:obsidian_reed_item"
+  },
+  "show_notification": true
+}

@@ -6,7 +6,7 @@ import net.kc.growores.GrowOres;
 import net.kc.growores.block.ModBlocks;
 import net.kc.growores.item.ModItems;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
@@ -19,12 +19,12 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registriesFuture);
+        super(output);
     }
 
 
     @Override
-    public void generate(RecipeExporter exporter) {
+    public void generate(Consumer<RecipeJsonProvider> exporter) {
         
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GROWING_BLOCK, 8)
                 .input(Items.BONE_MEAL).input(Items.COAL).input(Items.DIRT)

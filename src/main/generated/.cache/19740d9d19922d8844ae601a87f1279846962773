@@ -1,4 +1,4 @@
-// 1.21.1	2026-05-07T18:46:24.6220288	Kc's Growable Ores/GrowOres Botany Pots Compatibility
+// 1.20.1	2026-10-20T17:18:13.1150658	Kc's Growable Ores/GrowOres Botany Pots Compatibility
 82ed6b54eeaaaa026ea253144af11ee5de8593a5 data\botanypots\recipe\deepslate_inferium_reed_botany_pot.json
 0ff9dc6210fca8f3738c64c0b0952635e0d1938a data\botanypots\recipe\deepslate_iron_reed_botany_pot.json
 2b19d893414ce9767288139bb7e044bfa6dcc5c3 data\botanypots\recipe\gold_reed_botany_pot.json
@@ -29,8 +29,8 @@ a17b865277699d0b7d8218d90a2d78356f59fae6 data\botanypots\recipe\zinc_reed_botany
 4cc3da59a12a5aa8c4a4cb09916bb3cc6492b018 data\botanypots\recipe\prosperity_reed_botany_pot.json
 0c2555ac59af2b8bd0953efca213744d9d4f8e2b data\botanypots\recipe\blaze_reed_botany_pot.json
 e20d002079a68b9e70866f8ec457fbfc0d89254b data\botanypots\recipe\deepslate_zinc_reed_botany_pot.json
-2a0ee277c3791ee3f818848bb9567f1052a12923 data\botanypots\recipe\copper_reed_botany_pot.json
 d5bce945dafa551d4e92b2be59b9d278400f0220 data\botanypots\recipe\iron_reed_botany_pot.json
+2a0ee277c3791ee3f818848bb9567f1052a12923 data\botanypots\recipe\copper_reed_botany_pot.json
 45a7d50f60c8206787a8ef4f0d2e99b4537196fb data\botanypots\recipe\inferium_reed_botany_pot.json
 4a6d7a214b2560545101e85364a2513dee565fb6 data\botanypots\recipe\lapis_reed_botany_pot.json
 b192e75339c27a2a37b33c224f18c47227c91de4 data\botanypots\recipe\clay_reed_botany_pot.json

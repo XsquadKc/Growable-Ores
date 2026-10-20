@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:sugar_cane"
+    },
+    "S": {
+      "item": "minecraft:amethyst_block"
+    },
+    "X": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "RSR",
+    "RXR",
+    "RSR"
+  ],
+  "result": {
+    "item": "growores:amethyst_reed_item"
+  },
+  "show_notification": true
+}
